@@ -4,6 +4,7 @@
 
 #include "Headers/MyStack.h"
 
+MyStack *MyStack::instance = 0;
 MyStack *MyStack::getInstance()
 {
     if(instance == 0)
