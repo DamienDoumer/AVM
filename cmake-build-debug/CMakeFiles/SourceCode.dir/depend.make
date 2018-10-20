@@ -11,6 +11,14 @@ CMakeFiles\SourceCode.dir\CPU\Factory.cpp.obj: ..\CPU\Headers\IOperand.h
 CMakeFiles\SourceCode.dir\CPU\IOperand.cpp.obj: ..\CPU\Headers\IOperand.h
 CMakeFiles\SourceCode.dir\CPU\IOperand.cpp.obj: ..\CPU\IOperand.cpp
 
+CMakeFiles\SourceCode.dir\CPU\TypedOperand.cpp.obj: ..\CPU\Headers\IOperand.h
+CMakeFiles\SourceCode.dir\CPU\TypedOperand.cpp.obj: ..\CPU\Headers\TypedOperand.h
+CMakeFiles\SourceCode.dir\CPU\TypedOperand.cpp.obj: ..\CPU\TypedOperand.cpp
+CMakeFiles\SourceCode.dir\CPU\TypedOperand.cpp.obj: ..\Headers\includer.h
+
+CMakeFiles\SourceCode.dir\IO\Parser.cpp.obj: ..\IO\Headers\Parser.h
+CMakeFiles\SourceCode.dir\IO\Parser.cpp.obj: ..\IO\Parser.cpp
+
 CMakeFiles\SourceCode.dir\RAM\MyRegister.cpp.obj: ..\RAM\Headers\MyRegister.h
 CMakeFiles\SourceCode.dir\RAM\MyRegister.cpp.obj: ..\RAM\MyRegister.cpp
 

@@ -205,6 +205,60 @@ CPU\IOperand.cpp.s:
 	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\CPU\IOperand.cpp.s
 .PHONY : CPU\IOperand.cpp.s
 
+CPU\TypedOperand.obj: CPU\TypedOperand.cpp.obj
+
+.PHONY : CPU\TypedOperand.obj
+
+# target to build an object file
+CPU\TypedOperand.cpp.obj:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\CPU\TypedOperand.cpp.obj
+.PHONY : CPU\TypedOperand.cpp.obj
+
+CPU\TypedOperand.i: CPU\TypedOperand.cpp.i
+
+.PHONY : CPU\TypedOperand.i
+
+# target to preprocess a source file
+CPU\TypedOperand.cpp.i:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\CPU\TypedOperand.cpp.i
+.PHONY : CPU\TypedOperand.cpp.i
+
+CPU\TypedOperand.s: CPU\TypedOperand.cpp.s
+
+.PHONY : CPU\TypedOperand.s
+
+# target to generate assembly for a file
+CPU\TypedOperand.cpp.s:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\CPU\TypedOperand.cpp.s
+.PHONY : CPU\TypedOperand.cpp.s
+
+IO\Parser.obj: IO\Parser.cpp.obj
+
+.PHONY : IO\Parser.obj
+
+# target to build an object file
+IO\Parser.cpp.obj:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\IO\Parser.cpp.obj
+.PHONY : IO\Parser.cpp.obj
+
+IO\Parser.i: IO\Parser.cpp.i
+
+.PHONY : IO\Parser.i
+
+# target to preprocess a source file
+IO\Parser.cpp.i:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\IO\Parser.cpp.i
+.PHONY : IO\Parser.cpp.i
+
+IO\Parser.s: IO\Parser.cpp.s
+
+.PHONY : IO\Parser.s
+
+# target to generate assembly for a file
+IO\Parser.cpp.s:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\IO\Parser.cpp.s
+.PHONY : IO\Parser.cpp.s
+
 RAM\MyRegister.obj: RAM\MyRegister.cpp.obj
 
 .PHONY : RAM\MyRegister.obj
@@ -358,6 +412,12 @@ help:
 	@echo ... CPU/IOperand.obj
 	@echo ... CPU/IOperand.i
 	@echo ... CPU/IOperand.s
+	@echo ... CPU/TypedOperand.obj
+	@echo ... CPU/TypedOperand.i
+	@echo ... CPU/TypedOperand.s
+	@echo ... IO/Parser.obj
+	@echo ... IO/Parser.i
+	@echo ... IO/Parser.s
 	@echo ... RAM/MyRegister.obj
 	@echo ... RAM/MyRegister.i
 	@echo ... RAM/MyRegister.s

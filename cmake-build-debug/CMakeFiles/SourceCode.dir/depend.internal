@@ -11,6 +11,14 @@ CMakeFiles/SourceCode.dir/CPU/Factory.cpp.obj
 CMakeFiles/SourceCode.dir/CPU/IOperand.cpp.obj
  C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/CPU/Headers/IOperand.h
  C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/CPU/IOperand.cpp
+CMakeFiles/SourceCode.dir/CPU/TypedOperand.cpp.obj
+ C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/CPU/Headers/IOperand.h
+ C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/CPU/Headers/TypedOperand.h
+ C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/CPU/TypedOperand.cpp
+ C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/Headers/includer.h
+CMakeFiles/SourceCode.dir/IO/Parser.cpp.obj
+ C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/IO/Headers/Parser.h
+ C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/IO/Parser.cpp
 CMakeFiles/SourceCode.dir/RAM/MyRegister.cpp.obj
  C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/RAM/Headers/MyRegister.h
  C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/RAM/MyRegister.cpp
