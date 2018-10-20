@@ -205,6 +205,33 @@ CPU\IOperand.cpp.s:
 	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\CPU\IOperand.cpp.s
 .PHONY : CPU\IOperand.cpp.s
 
+RAM\MyRegister.obj: RAM\MyRegister.cpp.obj
+
+.PHONY : RAM\MyRegister.obj
+
+# target to build an object file
+RAM\MyRegister.cpp.obj:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\RAM\MyRegister.cpp.obj
+.PHONY : RAM\MyRegister.cpp.obj
+
+RAM\MyRegister.i: RAM\MyRegister.cpp.i
+
+.PHONY : RAM\MyRegister.i
+
+# target to preprocess a source file
+RAM\MyRegister.cpp.i:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\RAM\MyRegister.cpp.i
+.PHONY : RAM\MyRegister.cpp.i
+
+RAM\MyRegister.s: RAM\MyRegister.cpp.s
+
+.PHONY : RAM\MyRegister.s
+
+# target to generate assembly for a file
+RAM\MyRegister.cpp.s:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\RAM\MyRegister.cpp.s
+.PHONY : RAM\MyRegister.cpp.s
+
 RAM\MyStack.obj: RAM\MyStack.cpp.obj
 
 .PHONY : RAM\MyStack.obj
@@ -331,6 +358,9 @@ help:
 	@echo ... CPU/IOperand.obj
 	@echo ... CPU/IOperand.i
 	@echo ... CPU/IOperand.s
+	@echo ... RAM/MyRegister.obj
+	@echo ... RAM/MyRegister.i
+	@echo ... RAM/MyRegister.s
 	@echo ... RAM/MyStack.obj
 	@echo ... RAM/MyStack.i
 	@echo ... RAM/MyStack.s

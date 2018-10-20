@@ -1,6 +1,4 @@
-//
-// Created by dtohi on 10/20/2018.
-//
+#pragma once
 enum eOperandType
 {
     Int8,

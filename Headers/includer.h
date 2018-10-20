@@ -2,12 +2,10 @@
 // Created by dtohi on 10/20/2018.
 //
 
-#ifndef SOURCECODE_INCLUDERS_H
-#define SOURCECODE_INCLUDERS_H
+#ifndef SOURCECODE_INCLUDER_H
+#define SOURCECODE_INCLUDER_H
 
-#endif //SOURCECODE_INCLUDERS_H
-
-#pragma once
+#endif //SOURCECODE_INCLUDER_H
 
 #include <iostream>
 #include <string>
