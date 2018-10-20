@@ -82,6 +82,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/CPU/Headers/IOperand.h">
+			<Option target="SourceCode"/>
+		</Unit>
+		<Unit filename="C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/CPU/IOperand.cpp">
+			<Option target="SourceCode"/>
+		</Unit>
+		<Unit filename="C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/Headers/Includers.h">
+			<Option target="SourceCode"/>
+		</Unit>
+		<Unit filename="C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/eOperandType.cpp">
+			<Option target="SourceCode"/>
+		</Unit>
 		<Unit filename="C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/includer.cpp">
 			<Option target="SourceCode"/>
 		</Unit>

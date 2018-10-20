@@ -124,6 +124,60 @@ SourceCode\fast:
 	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\build
 .PHONY : SourceCode\fast
 
+CPU\IOperand.obj: CPU\IOperand.cpp.obj
+
+.PHONY : CPU\IOperand.obj
+
+# target to build an object file
+CPU\IOperand.cpp.obj:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\CPU\IOperand.cpp.obj
+.PHONY : CPU\IOperand.cpp.obj
+
+CPU\IOperand.i: CPU\IOperand.cpp.i
+
+.PHONY : CPU\IOperand.i
+
+# target to preprocess a source file
+CPU\IOperand.cpp.i:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\CPU\IOperand.cpp.i
+.PHONY : CPU\IOperand.cpp.i
+
+CPU\IOperand.s: CPU\IOperand.cpp.s
+
+.PHONY : CPU\IOperand.s
+
+# target to generate assembly for a file
+CPU\IOperand.cpp.s:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\CPU\IOperand.cpp.s
+.PHONY : CPU\IOperand.cpp.s
+
+eOperandType.obj: eOperandType.cpp.obj
+
+.PHONY : eOperandType.obj
+
+# target to build an object file
+eOperandType.cpp.obj:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\eOperandType.cpp.obj
+.PHONY : eOperandType.cpp.obj
+
+eOperandType.i: eOperandType.cpp.i
+
+.PHONY : eOperandType.i
+
+# target to preprocess a source file
+eOperandType.cpp.i:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\eOperandType.cpp.i
+.PHONY : eOperandType.cpp.i
+
+eOperandType.s: eOperandType.cpp.s
+
+.PHONY : eOperandType.s
+
+# target to generate assembly for a file
+eOperandType.cpp.s:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\eOperandType.cpp.s
+.PHONY : eOperandType.cpp.s
+
 includer.obj: includer.cpp.obj
 
 .PHONY : includer.obj
@@ -187,6 +241,12 @@ help:
 	@echo ... rebuild_cache
 	@echo ... SourceCode
 	@echo ... edit_cache
+	@echo ... CPU/IOperand.obj
+	@echo ... CPU/IOperand.i
+	@echo ... CPU/IOperand.s
+	@echo ... eOperandType.obj
+	@echo ... eOperandType.i
+	@echo ... eOperandType.s
 	@echo ... includer.obj
 	@echo ... includer.i
 	@echo ... includer.s

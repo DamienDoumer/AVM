@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/main.cpp
-iostream
--
+C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/CPU/Headers/IOperand.h
+../../includer.h
+C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/includer.h
+
+C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/CPU/IOperand.cpp
+Headers/IOperand.h
+C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/CPU/Headers/IOperand.h
 

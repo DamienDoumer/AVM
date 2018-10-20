@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/SourceCode.dir/main.cpp.obj"
   "CMakeFiles/SourceCode.dir/includer.cpp.obj"
+  "CMakeFiles/SourceCode.dir/CPU/IOperand.cpp.obj"
+  "CMakeFiles/SourceCode.dir/eOperandType.cpp.obj"
   "SourceCode.pdb"
   "SourceCode.exe"
   "SourceCode.exe.manifest"

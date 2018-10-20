@@ -3,4 +3,4 @@ project(SourceCode)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(SourceCode main.cpp includer.cpp)
+add_executable(SourceCode main.cpp includer.cpp CPU/IOperand.cpp CPU/Headers/IOperand.h Headers/Includers.h eOperandType.cpp)
