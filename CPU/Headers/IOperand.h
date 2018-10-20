@@ -5,7 +5,6 @@
 #ifndef SOURCECODE_IOPERAND_H
 #define SOURCECODE_IOPERAND_H
 
-#include <memory>
 #include "../Headers/Includers.h"
 #include "../eOperandType.cpp"
 

@@ -82,6 +82,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/CPU/Controller.cpp">
+			<Option target="SourceCode"/>
+		</Unit>
+		<Unit filename="C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/CPU/Controller.h">
+			<Option target="SourceCode"/>
+		</Unit>
+		<Unit filename="C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/CPU/Factory.cpp">
+			<Option target="SourceCode"/>
+		</Unit>
+		<Unit filename="C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/CPU/Headers/Factory.h">
+			<Option target="SourceCode"/>
+		</Unit>
 		<Unit filename="C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/CPU/Headers/IOperand.h">
 			<Option target="SourceCode"/>
 		</Unit>
@@ -89,6 +101,12 @@
 			<Option target="SourceCode"/>
 		</Unit>
 		<Unit filename="C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/Headers/Includers.h">
+			<Option target="SourceCode"/>
+		</Unit>
+		<Unit filename="C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/RAM/Headers/MyStack.h">
+			<Option target="SourceCode"/>
+		</Unit>
+		<Unit filename="C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/RAM/MyStack.cpp">
 			<Option target="SourceCode"/>
 		</Unit>
 		<Unit filename="C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/eOperandType.cpp">

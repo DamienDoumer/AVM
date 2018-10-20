@@ -124,6 +124,60 @@ SourceCode\fast:
 	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\build
 .PHONY : SourceCode\fast
 
+CPU\Controller.obj: CPU\Controller.cpp.obj
+
+.PHONY : CPU\Controller.obj
+
+# target to build an object file
+CPU\Controller.cpp.obj:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\CPU\Controller.cpp.obj
+.PHONY : CPU\Controller.cpp.obj
+
+CPU\Controller.i: CPU\Controller.cpp.i
+
+.PHONY : CPU\Controller.i
+
+# target to preprocess a source file
+CPU\Controller.cpp.i:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\CPU\Controller.cpp.i
+.PHONY : CPU\Controller.cpp.i
+
+CPU\Controller.s: CPU\Controller.cpp.s
+
+.PHONY : CPU\Controller.s
+
+# target to generate assembly for a file
+CPU\Controller.cpp.s:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\CPU\Controller.cpp.s
+.PHONY : CPU\Controller.cpp.s
+
+CPU\Factory.obj: CPU\Factory.cpp.obj
+
+.PHONY : CPU\Factory.obj
+
+# target to build an object file
+CPU\Factory.cpp.obj:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\CPU\Factory.cpp.obj
+.PHONY : CPU\Factory.cpp.obj
+
+CPU\Factory.i: CPU\Factory.cpp.i
+
+.PHONY : CPU\Factory.i
+
+# target to preprocess a source file
+CPU\Factory.cpp.i:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\CPU\Factory.cpp.i
+.PHONY : CPU\Factory.cpp.i
+
+CPU\Factory.s: CPU\Factory.cpp.s
+
+.PHONY : CPU\Factory.s
+
+# target to generate assembly for a file
+CPU\Factory.cpp.s:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\CPU\Factory.cpp.s
+.PHONY : CPU\Factory.cpp.s
+
 CPU\IOperand.obj: CPU\IOperand.cpp.obj
 
 .PHONY : CPU\IOperand.obj
@@ -150,6 +204,33 @@ CPU\IOperand.s: CPU\IOperand.cpp.s
 CPU\IOperand.cpp.s:
 	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\CPU\IOperand.cpp.s
 .PHONY : CPU\IOperand.cpp.s
+
+RAM\MyStack.obj: RAM\MyStack.cpp.obj
+
+.PHONY : RAM\MyStack.obj
+
+# target to build an object file
+RAM\MyStack.cpp.obj:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\RAM\MyStack.cpp.obj
+.PHONY : RAM\MyStack.cpp.obj
+
+RAM\MyStack.i: RAM\MyStack.cpp.i
+
+.PHONY : RAM\MyStack.i
+
+# target to preprocess a source file
+RAM\MyStack.cpp.i:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\RAM\MyStack.cpp.i
+.PHONY : RAM\MyStack.cpp.i
+
+RAM\MyStack.s: RAM\MyStack.cpp.s
+
+.PHONY : RAM\MyStack.s
+
+# target to generate assembly for a file
+RAM\MyStack.cpp.s:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\RAM\MyStack.cpp.s
+.PHONY : RAM\MyStack.cpp.s
 
 eOperandType.obj: eOperandType.cpp.obj
 
@@ -241,9 +322,18 @@ help:
 	@echo ... rebuild_cache
 	@echo ... SourceCode
 	@echo ... edit_cache
+	@echo ... CPU/Controller.obj
+	@echo ... CPU/Controller.i
+	@echo ... CPU/Controller.s
+	@echo ... CPU/Factory.obj
+	@echo ... CPU/Factory.i
+	@echo ... CPU/Factory.s
 	@echo ... CPU/IOperand.obj
 	@echo ... CPU/IOperand.i
 	@echo ... CPU/IOperand.s
+	@echo ... RAM/MyStack.obj
+	@echo ... RAM/MyStack.i
+	@echo ... RAM/MyStack.s
 	@echo ... eOperandType.obj
 	@echo ... eOperandType.i
 	@echo ... eOperandType.s

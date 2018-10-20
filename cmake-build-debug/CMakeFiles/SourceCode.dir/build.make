@@ -134,12 +134,72 @@ CMakeFiles\SourceCode.dir\eOperandType.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\SourceCode.dir\eOperandType.cpp.s /c C:\Users\dtohi\Desktop\Epitech\AbstractVM\SourceCode\eOperandType.cpp
 <<
 
+CMakeFiles\SourceCode.dir\CPU\Factory.cpp.obj: CMakeFiles\SourceCode.dir\flags.make
+CMakeFiles\SourceCode.dir\CPU\Factory.cpp.obj: ..\CPU\Factory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dtohi\Desktop\Epitech\AbstractVM\SourceCode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SourceCode.dir/CPU/Factory.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1415~1.267\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\SourceCode.dir\CPU\Factory.cpp.obj /FdCMakeFiles\SourceCode.dir\ /FS -c C:\Users\dtohi\Desktop\Epitech\AbstractVM\SourceCode\CPU\Factory.cpp
+<<
+
+CMakeFiles\SourceCode.dir\CPU\Factory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SourceCode.dir/CPU/Factory.cpp.i"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1415~1.267\bin\Hostx86\x86\cl.exe > CMakeFiles\SourceCode.dir\CPU\Factory.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dtohi\Desktop\Epitech\AbstractVM\SourceCode\CPU\Factory.cpp
+<<
+
+CMakeFiles\SourceCode.dir\CPU\Factory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SourceCode.dir/CPU/Factory.cpp.s"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1415~1.267\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\SourceCode.dir\CPU\Factory.cpp.s /c C:\Users\dtohi\Desktop\Epitech\AbstractVM\SourceCode\CPU\Factory.cpp
+<<
+
+CMakeFiles\SourceCode.dir\RAM\MyStack.cpp.obj: CMakeFiles\SourceCode.dir\flags.make
+CMakeFiles\SourceCode.dir\RAM\MyStack.cpp.obj: ..\RAM\MyStack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dtohi\Desktop\Epitech\AbstractVM\SourceCode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SourceCode.dir/RAM/MyStack.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1415~1.267\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\SourceCode.dir\RAM\MyStack.cpp.obj /FdCMakeFiles\SourceCode.dir\ /FS -c C:\Users\dtohi\Desktop\Epitech\AbstractVM\SourceCode\RAM\MyStack.cpp
+<<
+
+CMakeFiles\SourceCode.dir\RAM\MyStack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SourceCode.dir/RAM/MyStack.cpp.i"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1415~1.267\bin\Hostx86\x86\cl.exe > CMakeFiles\SourceCode.dir\RAM\MyStack.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dtohi\Desktop\Epitech\AbstractVM\SourceCode\RAM\MyStack.cpp
+<<
+
+CMakeFiles\SourceCode.dir\RAM\MyStack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SourceCode.dir/RAM/MyStack.cpp.s"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1415~1.267\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\SourceCode.dir\RAM\MyStack.cpp.s /c C:\Users\dtohi\Desktop\Epitech\AbstractVM\SourceCode\RAM\MyStack.cpp
+<<
+
+CMakeFiles\SourceCode.dir\CPU\Controller.cpp.obj: CMakeFiles\SourceCode.dir\flags.make
+CMakeFiles\SourceCode.dir\CPU\Controller.cpp.obj: ..\CPU\Controller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dtohi\Desktop\Epitech\AbstractVM\SourceCode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SourceCode.dir/CPU/Controller.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1415~1.267\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\SourceCode.dir\CPU\Controller.cpp.obj /FdCMakeFiles\SourceCode.dir\ /FS -c C:\Users\dtohi\Desktop\Epitech\AbstractVM\SourceCode\CPU\Controller.cpp
+<<
+
+CMakeFiles\SourceCode.dir\CPU\Controller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SourceCode.dir/CPU/Controller.cpp.i"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1415~1.267\bin\Hostx86\x86\cl.exe > CMakeFiles\SourceCode.dir\CPU\Controller.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dtohi\Desktop\Epitech\AbstractVM\SourceCode\CPU\Controller.cpp
+<<
+
+CMakeFiles\SourceCode.dir\CPU\Controller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SourceCode.dir/CPU/Controller.cpp.s"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1415~1.267\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\SourceCode.dir\CPU\Controller.cpp.s /c C:\Users\dtohi\Desktop\Epitech\AbstractVM\SourceCode\CPU\Controller.cpp
+<<
+
 # Object files for target SourceCode
 SourceCode_OBJECTS = \
 "CMakeFiles\SourceCode.dir\main.cpp.obj" \
 "CMakeFiles\SourceCode.dir\includer.cpp.obj" \
 "CMakeFiles\SourceCode.dir\CPU\IOperand.cpp.obj" \
-"CMakeFiles\SourceCode.dir\eOperandType.cpp.obj"
+"CMakeFiles\SourceCode.dir\eOperandType.cpp.obj" \
+"CMakeFiles\SourceCode.dir\CPU\Factory.cpp.obj" \
+"CMakeFiles\SourceCode.dir\RAM\MyStack.cpp.obj" \
+"CMakeFiles\SourceCode.dir\CPU\Controller.cpp.obj"
 
 # External object files for target SourceCode
 SourceCode_EXTERNAL_OBJECTS =
@@ -148,9 +208,12 @@ SourceCode.exe: CMakeFiles\SourceCode.dir\main.cpp.obj
 SourceCode.exe: CMakeFiles\SourceCode.dir\includer.cpp.obj
 SourceCode.exe: CMakeFiles\SourceCode.dir\CPU\IOperand.cpp.obj
 SourceCode.exe: CMakeFiles\SourceCode.dir\eOperandType.cpp.obj
+SourceCode.exe: CMakeFiles\SourceCode.dir\CPU\Factory.cpp.obj
+SourceCode.exe: CMakeFiles\SourceCode.dir\RAM\MyStack.cpp.obj
+SourceCode.exe: CMakeFiles\SourceCode.dir\CPU\Controller.cpp.obj
 SourceCode.exe: CMakeFiles\SourceCode.dir\build.make
 SourceCode.exe: CMakeFiles\SourceCode.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\dtohi\Desktop\Epitech\AbstractVM\SourceCode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable SourceCode.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\dtohi\Desktop\Epitech\AbstractVM\SourceCode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable SourceCode.exe"
 	"C:\Program Files\JetBrains\CLion 2018.2.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\SourceCode.dir --manifests  -- C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1415~1.267\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\SourceCode.dir\objects1.rsp @<<
  /out:SourceCode.exe /implib:SourceCode.lib /pdb:C:\Users\dtohi\Desktop\Epitech\AbstractVM\SourceCode\cmake-build-debug\SourceCode.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
