@@ -6,8 +6,14 @@
 #define SOURCECODE_MYREGISTER_H
 
 
-class MyRegister {
+class MyRegister
+{
+private:
+    static MyRegister* instance;
+    MyRegister();
 
+public:
+    static MyRegister* getInstance();
 };
 
 

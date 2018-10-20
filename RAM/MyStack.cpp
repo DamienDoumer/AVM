@@ -3,3 +3,14 @@
 //
 
 #include "Headers/MyStack.h"
+
+MyStack *MyStack::getInstance()
+{
+    if(instance == 0)
+    {
+        instance = new MyStack();
+    }
+    return  instance;
+}
+
+MyStack::MyStack(){}

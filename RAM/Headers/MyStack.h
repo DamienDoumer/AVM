@@ -6,9 +6,15 @@
 #define SOURCECODE_MYSTACK_H
 
 
+#include <sys/stat.h>
+
 class MyStack {
+private:
+    static MyStack *instance;
+    MyStack();
 
+public:
+    static MyStack *getInstance();
 };
-
 
 #endif //SOURCECODE_MYSTACK_H

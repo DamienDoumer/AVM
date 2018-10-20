@@ -3,3 +3,15 @@
 //
 
 #include "Headers/MyRegister.h"
+
+MyRegister *MyRegister::instance = 0;
+MyRegister *MyRegister::getInstance()
+{
+    if (instance == 0)
+    {
+        instance = new MyRegister();
+    }
+    return instance;
+}
+
+MyRegister::MyRegister(){}
