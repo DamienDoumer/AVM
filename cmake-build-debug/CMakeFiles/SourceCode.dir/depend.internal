@@ -15,6 +15,7 @@ CMakeFiles/SourceCode.dir/RAM/MyRegister.cpp.obj
  C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/RAM/Headers/MyRegister.h
  C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/RAM/MyRegister.cpp
 CMakeFiles/SourceCode.dir/RAM/MyStack.cpp.obj
+ C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/CPU/Headers/IOperand.h
  C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/RAM/Headers/MyStack.h
  C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/RAM/MyStack.cpp
 CMakeFiles/SourceCode.dir/eOperandType.cpp.obj

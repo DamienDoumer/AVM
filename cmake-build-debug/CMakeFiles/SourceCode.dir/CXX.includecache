@@ -6,9 +6,19 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/CPU/Headers/IOperand.h
+../Headers/includer.h
+C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/CPU/Headers/includer.h
+../eOperandType.cpp
+C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/CPU/eOperandType.cpp
+
 C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/RAM/Headers/MyStack.h
 sys/stat.h
 -
+stack
+-
+../../CPU/Headers/IOperand.h
+C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/CPU/Headers/IOperand.h
 
 C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/RAM/MyStack.cpp
 Headers/MyStack.h

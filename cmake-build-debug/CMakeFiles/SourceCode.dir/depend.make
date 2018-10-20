@@ -14,6 +14,7 @@ CMakeFiles\SourceCode.dir\CPU\IOperand.cpp.obj: ..\CPU\IOperand.cpp
 CMakeFiles\SourceCode.dir\RAM\MyRegister.cpp.obj: ..\RAM\Headers\MyRegister.h
 CMakeFiles\SourceCode.dir\RAM\MyRegister.cpp.obj: ..\RAM\MyRegister.cpp
 
+CMakeFiles\SourceCode.dir\RAM\MyStack.cpp.obj: ..\CPU\Headers\IOperand.h
 CMakeFiles\SourceCode.dir\RAM\MyStack.cpp.obj: ..\RAM\Headers\MyStack.h
 CMakeFiles\SourceCode.dir\RAM\MyStack.cpp.obj: ..\RAM\MyStack.cpp
 
