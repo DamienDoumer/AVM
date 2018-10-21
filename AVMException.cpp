@@ -5,12 +5,12 @@
 #include <math.h>
 #include "Headers/includer.h"
 
-class AVMException : public _exception
+class AVMException : public exception
 {
-    string message;
+    char *message;
 public:
-    AVMException(string message) : message(message){};
-    const string what() const throw()
+    AVMException(char *message) : message(message){};
+    const char *what() const throw()
     {
         return message;
     }

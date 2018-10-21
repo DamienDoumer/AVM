@@ -22,7 +22,7 @@ int Controller::listenToCommands()
     {
         while (true)
         {
-            cout << "Please enter a command for the VM to exexute.";
+            cout << "Please enter a command for the VM to exexute.\n";
             getline(cin, command);
             parsedCommand = parser.parseCommand(command);
         }
@@ -30,8 +30,8 @@ int Controller::listenToCommands()
     catch (exception& e)
     {
         cout << "An error occured while processing" <<
-             "your command. Program will exit." <<
-             e.what();
+             "your command. Program will exit. :: " <<
+             e.what() << "\n";
         returnVal = -1;
     }
     return returnVal;

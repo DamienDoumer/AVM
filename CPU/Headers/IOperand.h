@@ -5,8 +5,8 @@
 #ifndef SOURCECODE_IOPERAND_H
 #define SOURCECODE_IOPERAND_H
 
-#include "../Headers/includer.h"
-#include "../eOperandType.cpp"
+#include "../../Headers/includer.h"
+#include "../../eOperandType.cpp"
 
 class IOperand {
 public:

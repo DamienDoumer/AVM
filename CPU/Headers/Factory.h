@@ -6,8 +6,8 @@
 #define SOURCECODE_FACTORY_H
 
 #include <memory>
-#include "../Headers/includer.h"
-#include "../eOperandType.cpp"
+#include "../../Headers/includer.h"
+#include "../../eOperandType.cpp"
 #include "IOperand.h"
 
 class Factory {

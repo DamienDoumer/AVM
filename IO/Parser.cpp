@@ -4,6 +4,7 @@
 
 #include "Headers/Parser.h"
 #include "../AVMException.cpp"
+#include <algorithm>
 
 std::tuple<string, string, string> Parser::parseCommand(string command)
 {

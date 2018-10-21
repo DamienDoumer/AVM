@@ -6,13 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/AVMException.cpp
-math.h
--
-Headers/includer.h
-C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/Headers/includer.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Controller.cpp
+Headers/Controller.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/Controller.h
 
-C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/Headers/includer.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/Controller.h
+../../IO/Headers/Parser.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/IO/Headers/Parser.h
+../../Headers/includer.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
+
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
 iostream
 -
 string
@@ -20,15 +24,9 @@ string
 memory
 -
 
-C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/IO/Headers/Parser.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/IO/Headers/Parser.h
 ../../Headers/includer.h
-C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/Headers/includer.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
 list
 -
-
-C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/IO/Parser.cpp
-Headers/Parser.h
-C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/IO/Headers/Parser.h
-../AVMException.cpp
-C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/AVMException.cpp
 
