@@ -124,6 +124,33 @@ SourceCode\fast:
 	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\build
 .PHONY : SourceCode\fast
 
+AVMException.obj: AVMException.cpp.obj
+
+.PHONY : AVMException.obj
+
+# target to build an object file
+AVMException.cpp.obj:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\AVMException.cpp.obj
+.PHONY : AVMException.cpp.obj
+
+AVMException.i: AVMException.cpp.i
+
+.PHONY : AVMException.i
+
+# target to preprocess a source file
+AVMException.cpp.i:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\AVMException.cpp.i
+.PHONY : AVMException.cpp.i
+
+AVMException.s: AVMException.cpp.s
+
+.PHONY : AVMException.s
+
+# target to generate assembly for a file
+AVMException.cpp.s:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\AVMException.cpp.s
+.PHONY : AVMException.cpp.s
+
 CPU\Controller.obj: CPU\Controller.cpp.obj
 
 .PHONY : CPU\Controller.obj
@@ -258,6 +285,33 @@ IO\Parser.s: IO\Parser.cpp.s
 IO\Parser.cpp.s:
 	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\IO\Parser.cpp.s
 .PHONY : IO\Parser.cpp.s
+
+IO\Periferal.obj: IO\Periferal.cpp.obj
+
+.PHONY : IO\Periferal.obj
+
+# target to build an object file
+IO\Periferal.cpp.obj:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\IO\Periferal.cpp.obj
+.PHONY : IO\Periferal.cpp.obj
+
+IO\Periferal.i: IO\Periferal.cpp.i
+
+.PHONY : IO\Periferal.i
+
+# target to preprocess a source file
+IO\Periferal.cpp.i:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\IO\Periferal.cpp.i
+.PHONY : IO\Periferal.cpp.i
+
+IO\Periferal.s: IO\Periferal.cpp.s
+
+.PHONY : IO\Periferal.s
+
+# target to generate assembly for a file
+IO\Periferal.cpp.s:
+	$(MAKE) -f CMakeFiles\SourceCode.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SourceCode.dir\IO\Periferal.cpp.s
+.PHONY : IO\Periferal.cpp.s
 
 RAM\MyRegister.obj: RAM\MyRegister.cpp.obj
 
@@ -403,6 +457,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... SourceCode
 	@echo ... edit_cache
+	@echo ... AVMException.obj
+	@echo ... AVMException.i
+	@echo ... AVMException.s
 	@echo ... CPU/Controller.obj
 	@echo ... CPU/Controller.i
 	@echo ... CPU/Controller.s
@@ -418,6 +475,9 @@ help:
 	@echo ... IO/Parser.obj
 	@echo ... IO/Parser.i
 	@echo ... IO/Parser.s
+	@echo ... IO/Periferal.obj
+	@echo ... IO/Periferal.i
+	@echo ... IO/Periferal.s
 	@echo ... RAM/MyRegister.obj
 	@echo ... RAM/MyRegister.i
 	@echo ... RAM/MyRegister.s

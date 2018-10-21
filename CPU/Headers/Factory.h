@@ -14,5 +14,4 @@ class Factory {
     static std::unique_ptr<IOperand> createOperand(eOperandType type, const std::string& value);
 };
 
-
 #endif //SOURCECODE_FACTORY_H

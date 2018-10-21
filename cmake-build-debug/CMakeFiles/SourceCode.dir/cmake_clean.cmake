@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SourceCode.dir/RAM/MyRegister.cpp.obj"
   "CMakeFiles/SourceCode.dir/IO/Parser.cpp.obj"
   "CMakeFiles/SourceCode.dir/CPU/TypedOperand.cpp.obj"
+  "CMakeFiles/SourceCode.dir/IO/Periferal.cpp.obj"
+  "CMakeFiles/SourceCode.dir/AVMException.cpp.obj"
   "SourceCode.pdb"
   "SourceCode.exe"
   "SourceCode.exe.manifest"

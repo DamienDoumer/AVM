@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/AVMException.cpp">
+			<Option target="SourceCode"/>
+		</Unit>
 		<Unit filename="C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/CPU/Controller.cpp">
 			<Option target="SourceCode"/>
 		</Unit>
@@ -112,7 +115,13 @@
 		<Unit filename="C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/IO/Headers/Parser.h">
 			<Option target="SourceCode"/>
 		</Unit>
+		<Unit filename="C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/IO/Headers/Periferal.h">
+			<Option target="SourceCode"/>
+		</Unit>
 		<Unit filename="C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/IO/Parser.cpp">
+			<Option target="SourceCode"/>
+		</Unit>
+		<Unit filename="C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/IO/Periferal.cpp">
 			<Option target="SourceCode"/>
 		</Unit>
 		<Unit filename="C:/Users/dtohi/Desktop/Epitech/AbstractVM/SourceCode/RAM/Headers/MyRegister.h">

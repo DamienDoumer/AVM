@@ -12,4 +12,6 @@
 #include <memory>
 
 using std::cout;
+using std::cin;
 using std::string;
+using std::exception;

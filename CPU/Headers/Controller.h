@@ -5,9 +5,15 @@
 #ifndef SOURCECODE_CONTROLLER_H
 #define SOURCECODE_CONTROLLER_H
 
+#include "../../IO/Headers/Parser.h"
+#include "../../Headers/includer.h"
 
-class Controller {
-
+class Controller
+{
+    Parser parser;
+public:
+    int listenToCommands();
+    Controller();
 };
 
 
