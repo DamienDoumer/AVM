@@ -6,14 +6,10 @@
 
 #IncludeRegexTransform: 
 
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Controller.cpp
-Headers/Controller.h
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/Controller.h
-
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/Controller.h
-../../IO/Headers/Parser.h
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/IO/Headers/Parser.h
-../../Headers/includer.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMException.cpp
+math.h
+-
+Headers/includer.h
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
 
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
@@ -28,5 +24,15 @@ memory
 ../../Headers/includer.h
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
 list
+-
+
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/IO/Parser.cpp
+Headers/Parser.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/IO/Headers/Parser.h
+../AVMException.cpp
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMException.cpp
+algorithm
+-
+regex
 -
 

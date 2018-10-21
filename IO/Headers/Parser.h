@@ -12,6 +12,9 @@ class Parser {
 
     int findStringLastIndex(string &str, char c);
     bool stringHasCharAfterIndex(int index, string& str);
+    string findMatchingCommand(string command);
+    std::tuple<string, string> findMatchingTypeAndValue(string command);
+    string extractContentFromBrackets(string command);
 public:
     std::tuple<string, string, string> parseCommand(string command);
     std::list<std::tuple<string, string, string>> parseFromFile(string path);
