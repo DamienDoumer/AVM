@@ -7,7 +7,6 @@
 Controller::Controller()
 {}
 
-
 /*
  * Listen to user's command
  * Return non 0 digit if error occures.
@@ -35,4 +34,9 @@ int Controller::listenToCommands()
         returnVal = -1;
     }
     return returnVal;
+}
+
+void Controller::makeOperand(string type, string value)
+{
+
 }

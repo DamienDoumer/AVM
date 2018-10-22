@@ -8,11 +8,15 @@
 #include <regex>
 using namespace std::regex_constants;
 
+/*
+ * Parse a command and return its interpretation
+ * Returns a tuple made of the Command, The Type if reuired
+ * And the value if required
+ */
 std::tuple<string, string, string> Parser::parseCommand(string command)
 {
     string commandExtracted;
-    string type;
-    string value;
+    std::tuple<string, string> typeValTuple;
 
     if(!commandHasValidArgCount(command))
         throw AVMException("Invalid arguement count, please "
@@ -20,13 +24,14 @@ std::tuple<string, string, string> Parser::parseCommand(string command)
     commandExtracted = findMatchingCommand(command);
     if(commandExtracted == "Push")
     {
-        findMatchingTypeAndValue(command);
+        typeValTuple = findMatchingTypeAndValue(command);
     }
-    return std::make_tuple(commandExtracted, type, value);
+    return std::make_tuple(commandExtracted, std::get<0>(typeValTuple), std::get<1>(typeValTuple));
 }
 
 /*
  * Find the command which the user sends.
+ * Case insensitive
  */
 string Parser::findMatchingCommand(string cmd)
 {
@@ -50,16 +55,15 @@ string Parser::findMatchingCommand(string cmd)
 
 /*
  * Find the type and value which the user sends.
+ * Case sensitive matching
  */
 std::tuple<string, string>  Parser::findMatchingTypeAndValue(string command)
 {
     string types[] = { "Int8", "Int16", "Int32", "Float",
                        "Double", "BigDecimal" };
-    std::regex caseInsensitiveRegex(types[0], ECMAScript | icase );
     string type = "";
     string value;
     std::smatch cmdMatch;
-    int index = 0;
     size_t  n1 = 0, n2 = 0;
 
     n1 = std::count(command.begin(), command.end(), '(');
@@ -81,6 +85,7 @@ std::tuple<string, string>  Parser::findMatchingTypeAndValue(string command)
         throw AVMException("Invalid Command passed.");
     return std::make_tuple(type, value);
 }
+
 /*
  * Extract the content of brackets
  * and returns it
@@ -117,6 +122,7 @@ bool Parser::commandHasValidArgCount(string command)
     if (n == 1 || n == 0)
         return true;
 }
+
 /*
  * Find the last index of a char in a string
  */
@@ -129,6 +135,7 @@ int Parser::findStringLastIndex(string& str, char x)
     }
     return -1;
 }
+
 /*
  * Check if a string has characters
  * after a given index.

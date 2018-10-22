@@ -7,5 +7,6 @@
 std::unique_ptr<IOperand> Factory::createOperand(eOperandType type,
                                                  const std::string& value)
 {
+
     return NULL;
 }

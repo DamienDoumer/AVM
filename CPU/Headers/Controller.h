@@ -13,6 +13,7 @@ class Controller
     Parser parser;
 public:
     int listenToCommands();
+    void makeOperand(string type, string value);
     Controller();
 };
 
