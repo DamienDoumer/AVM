@@ -81,20 +81,21 @@ std::tuple<string, string>  Parser::findMatchingTypeAndValue(string command)
         throw AVMException("Invalid Command passed.");
     return std::make_tuple(type, value);
 }
-
+/*
+ * Extract the content of brackets
+ * and returns it
+ */
 string Parser::extractContentFromBrackets(string command)
 {
-    int n = 0;
-    int i = 0;
-    int blkNum = 1;
-    string val;
+    int n1 = command.find('(');
+    int n2 = command.find(')');
+    string value;
 
-    while( i <= blkNum )
+    for(int i = n1 + 1; i<n2; i++)
     {
-        n = command.find_first_of('(', n + 1);
-        i++;
+        value += command[i];
     }
-    val = command.substr( n + 1, ( command.find_first_of(')', n) - n - 1) );
+    return value;
 }
 
 /*
