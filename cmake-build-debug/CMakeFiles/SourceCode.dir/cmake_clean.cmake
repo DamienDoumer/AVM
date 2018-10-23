@@ -10,6 +10,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/SourceCode.dir/CPU/TypedOperand.cpp.o"
   "CMakeFiles/SourceCode.dir/IO/Periferal.cpp.o"
   "CMakeFiles/SourceCode.dir/AVMException.cpp.o"
+  "CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o"
+  "CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.o"
+  "CMakeFiles/SourceCode.dir/CPU/Converter.cpp.o"
   "SourceCode.pdb"
   "SourceCode"
 )

@@ -49,25 +49,31 @@ void Controller::makeOperand(string type, string value)
         if(type == "Int8")
         {
             std::unique_ptr<TypedOperand<int>> op = Factory<int>::createIntOperand(eOperandType::Int8, value);
+            BoxOperand *bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
         }
         else if(type == "Int16")
         {
             std::unique_ptr<TypedOperand<int>> op = Factory<int>::createIntOperand(eOperandType::Int16, value);
+            BoxOperand *bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
         }
         else if(type == "Int32")
         {
             std::unique_ptr<TypedOperand<int>> op = Factory<int>::createIntOperand(eOperandType::Int32, value);
+            BoxOperand *bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
         }
         else if(type == "Float") {
             std::unique_ptr<TypedOperand<float>> op = Factory<float>::createFloat(value);
+            BoxOperand *bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
         }
         else if(type == "Double")
         {
             std::unique_ptr<TypedOperand<double>> op = Factory<double>::createDouble(value);
+            BoxOperand *bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
         }
         else if(type == "BigDecimal")
         {
             std::unique_ptr<TypedOperand<long double>> op = Factory<long double>::createBigDecimal(value);
+            BoxOperand *bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
         }
     }
     catch (std::invalid_argument e) {

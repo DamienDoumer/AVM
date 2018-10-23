@@ -5,9 +5,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMException.cpp" "/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles/SourceCode.dir/AVMException.cpp.o"
+  "/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/BoxOperand.cpp" "/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o"
   "/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Controller.cpp" "/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o"
+  "/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Converter.cpp" "/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles/SourceCode.dir/CPU/Converter.cpp.o"
   "/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/IOperand.cpp" "/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles/SourceCode.dir/CPU/IOperand.cpp.o"
   "/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/TypedOperand.cpp" "/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles/SourceCode.dir/CPU/TypedOperand.cpp.o"
+  "/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/ValueConverter.cpp" "/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.o"
   "/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/IO/Parser.cpp" "/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles/SourceCode.dir/IO/Parser.cpp.o"
   "/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/IO/Periferal.cpp" "/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles/SourceCode.dir/IO/Periferal.cpp.o"
   "/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/RAM/MyRegister.cpp" "/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles/SourceCode.dir/RAM/MyRegister.cpp.o"

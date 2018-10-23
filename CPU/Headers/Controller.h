@@ -14,6 +14,7 @@ class Controller
 public:
     int listenToCommands();
     void makeOperand(string type, string value);
+    void performiInstructions();
     Controller();
 };
 

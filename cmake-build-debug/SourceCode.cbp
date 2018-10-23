@@ -87,10 +87,22 @@
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMException.cpp">
 			<Option target="SourceCode"/>
 		</Unit>
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/BoxOperand.cpp">
+			<Option target="SourceCode"/>
+		</Unit>
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Controller.cpp">
 			<Option target="SourceCode"/>
 		</Unit>
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Converter.cpp">
+			<Option target="SourceCode"/>
+		</Unit>
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/BoxOperand.h">
+			<Option target="SourceCode"/>
+		</Unit>
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/Controller.h">
+			<Option target="SourceCode"/>
+		</Unit>
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/Converter.h">
 			<Option target="SourceCode"/>
 		</Unit>
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/Factory.h">
@@ -106,6 +118,9 @@
 			<Option target="SourceCode"/>
 		</Unit>
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/TypedOperand.cpp">
+			<Option target="SourceCode"/>
+		</Unit>
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/ValueConverter.cpp">
 			<Option target="SourceCode"/>
 		</Unit>
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h">

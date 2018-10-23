@@ -11,18 +11,19 @@
 using std::stack;
 #include "../../CPU/Headers/IOperand.h"
 #include "../../CPU/Headers/TypedOperand.h"
+#include "../../CPU/Headers/BoxOperand.h"
 
-template<typename T>
+
 class MyStack {
 private:
     static MyStack *instance;
-    MyStack();
-    std::stack<TypedOperand<T>> _stack;
+    MyStack(){};
+    std::stack<BoxOperand> _stack;
 
 public:
     static MyStack *getInstance();
-    std::unique_ptr<IOperand> pop();
-    void push(std::unique_ptr<IOperand> value);
+    BoxOperand *pop();
+    void push(std::unique_ptr<BoxOperand> value);
     void clear();
     void dup();
     void swap();

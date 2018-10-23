@@ -150,6 +150,33 @@ AVMException.cpp.s:
 	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/AVMException.cpp.s
 .PHONY : AVMException.cpp.s
 
+CPU/BoxOperand.o: CPU/BoxOperand.cpp.o
+
+.PHONY : CPU/BoxOperand.o
+
+# target to build an object file
+CPU/BoxOperand.cpp.o:
+	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o
+.PHONY : CPU/BoxOperand.cpp.o
+
+CPU/BoxOperand.i: CPU/BoxOperand.cpp.i
+
+.PHONY : CPU/BoxOperand.i
+
+# target to preprocess a source file
+CPU/BoxOperand.cpp.i:
+	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.i
+.PHONY : CPU/BoxOperand.cpp.i
+
+CPU/BoxOperand.s: CPU/BoxOperand.cpp.s
+
+.PHONY : CPU/BoxOperand.s
+
+# target to generate assembly for a file
+CPU/BoxOperand.cpp.s:
+	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.s
+.PHONY : CPU/BoxOperand.cpp.s
+
 CPU/Controller.o: CPU/Controller.cpp.o
 
 .PHONY : CPU/Controller.o
@@ -176,6 +203,33 @@ CPU/Controller.s: CPU/Controller.cpp.s
 CPU/Controller.cpp.s:
 	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/CPU/Controller.cpp.s
 .PHONY : CPU/Controller.cpp.s
+
+CPU/Converter.o: CPU/Converter.cpp.o
+
+.PHONY : CPU/Converter.o
+
+# target to build an object file
+CPU/Converter.cpp.o:
+	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/CPU/Converter.cpp.o
+.PHONY : CPU/Converter.cpp.o
+
+CPU/Converter.i: CPU/Converter.cpp.i
+
+.PHONY : CPU/Converter.i
+
+# target to preprocess a source file
+CPU/Converter.cpp.i:
+	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/CPU/Converter.cpp.i
+.PHONY : CPU/Converter.cpp.i
+
+CPU/Converter.s: CPU/Converter.cpp.s
+
+.PHONY : CPU/Converter.s
+
+# target to generate assembly for a file
+CPU/Converter.cpp.s:
+	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/CPU/Converter.cpp.s
+.PHONY : CPU/Converter.cpp.s
 
 CPU/IOperand.o: CPU/IOperand.cpp.o
 
@@ -230,6 +284,33 @@ CPU/TypedOperand.s: CPU/TypedOperand.cpp.s
 CPU/TypedOperand.cpp.s:
 	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/CPU/TypedOperand.cpp.s
 .PHONY : CPU/TypedOperand.cpp.s
+
+CPU/ValueConverter.o: CPU/ValueConverter.cpp.o
+
+.PHONY : CPU/ValueConverter.o
+
+# target to build an object file
+CPU/ValueConverter.cpp.o:
+	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.o
+.PHONY : CPU/ValueConverter.cpp.o
+
+CPU/ValueConverter.i: CPU/ValueConverter.cpp.i
+
+.PHONY : CPU/ValueConverter.i
+
+# target to preprocess a source file
+CPU/ValueConverter.cpp.i:
+	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.i
+.PHONY : CPU/ValueConverter.cpp.i
+
+CPU/ValueConverter.s: CPU/ValueConverter.cpp.s
+
+.PHONY : CPU/ValueConverter.s
+
+# target to generate assembly for a file
+CPU/ValueConverter.cpp.s:
+	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.s
+.PHONY : CPU/ValueConverter.cpp.s
 
 IO/Parser.o: IO/Parser.cpp.o
 
@@ -432,15 +513,24 @@ help:
 	@echo "... AVMException.o"
 	@echo "... AVMException.i"
 	@echo "... AVMException.s"
+	@echo "... CPU/BoxOperand.o"
+	@echo "... CPU/BoxOperand.i"
+	@echo "... CPU/BoxOperand.s"
 	@echo "... CPU/Controller.o"
 	@echo "... CPU/Controller.i"
 	@echo "... CPU/Controller.s"
+	@echo "... CPU/Converter.o"
+	@echo "... CPU/Converter.i"
+	@echo "... CPU/Converter.s"
 	@echo "... CPU/IOperand.o"
 	@echo "... CPU/IOperand.i"
 	@echo "... CPU/IOperand.s"
 	@echo "... CPU/TypedOperand.o"
 	@echo "... CPU/TypedOperand.i"
 	@echo "... CPU/TypedOperand.s"
+	@echo "... CPU/ValueConverter.o"
+	@echo "... CPU/ValueConverter.i"
+	@echo "... CPU/ValueConverter.s"
 	@echo "... IO/Parser.o"
 	@echo "... IO/Parser.i"
 	@echo "... IO/Parser.s"

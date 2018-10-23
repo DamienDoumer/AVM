@@ -4,15 +4,30 @@
 CMakeFiles/SourceCode.dir/AVMException.cpp.o: ../AVMException.cpp
 CMakeFiles/SourceCode.dir/AVMException.cpp.o: ../Headers/includer.h
 
+CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o: ../CPU/BoxOperand.cpp
+CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o: ../CPU/Headers/BoxOperand.h
+CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o: ../CPU/Headers/IOperand.h
+CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o: ../Headers/includer.h
+CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o: ../eOperandType.cpp
+
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../AVMException.cpp
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/Controller.cpp
+CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/Headers/BoxOperand.h
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/Headers/Controller.h
+CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/Headers/Converter.h
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/Headers/Factory.h
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/Headers/IOperand.h
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/Headers/TypedOperand.h
+CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/ValueConverter.cpp
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../Headers/includer.h
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../IO/Headers/Parser.h
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../eOperandType.cpp
+
+CMakeFiles/SourceCode.dir/CPU/Converter.cpp.o: ../AVMException.cpp
+CMakeFiles/SourceCode.dir/CPU/Converter.cpp.o: ../CPU/Converter.cpp
+CMakeFiles/SourceCode.dir/CPU/Converter.cpp.o: ../CPU/Headers/Converter.h
+CMakeFiles/SourceCode.dir/CPU/Converter.cpp.o: ../Headers/includer.h
+CMakeFiles/SourceCode.dir/CPU/Converter.cpp.o: ../eOperandType.cpp
 
 CMakeFiles/SourceCode.dir/CPU/IOperand.cpp.o: ../CPU/Headers/IOperand.h
 CMakeFiles/SourceCode.dir/CPU/IOperand.cpp.o: ../CPU/IOperand.cpp
@@ -25,6 +40,11 @@ CMakeFiles/SourceCode.dir/CPU/TypedOperand.cpp.o: ../CPU/TypedOperand.cpp
 CMakeFiles/SourceCode.dir/CPU/TypedOperand.cpp.o: ../Headers/includer.h
 CMakeFiles/SourceCode.dir/CPU/TypedOperand.cpp.o: ../eOperandType.cpp
 
+CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.o: ../AVMException.cpp
+CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.o: ../CPU/ValueConverter.cpp
+CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.o: ../Headers/includer.h
+CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.o: ../eOperandType.cpp
+
 CMakeFiles/SourceCode.dir/IO/Parser.cpp.o: ../AVMException.cpp
 CMakeFiles/SourceCode.dir/IO/Parser.cpp.o: ../Headers/includer.h
 CMakeFiles/SourceCode.dir/IO/Parser.cpp.o: ../IO/Headers/Parser.h
@@ -36,7 +56,10 @@ CMakeFiles/SourceCode.dir/IO/Periferal.cpp.o: ../IO/Periferal.cpp
 CMakeFiles/SourceCode.dir/RAM/MyRegister.cpp.o: ../RAM/Headers/MyRegister.h
 CMakeFiles/SourceCode.dir/RAM/MyRegister.cpp.o: ../RAM/MyRegister.cpp
 
+CMakeFiles/SourceCode.dir/RAM/MyStack.cpp.o: ../AVMException.cpp
+CMakeFiles/SourceCode.dir/RAM/MyStack.cpp.o: ../CPU/Headers/BoxOperand.h
 CMakeFiles/SourceCode.dir/RAM/MyStack.cpp.o: ../CPU/Headers/IOperand.h
+CMakeFiles/SourceCode.dir/RAM/MyStack.cpp.o: ../CPU/Headers/TypedOperand.h
 CMakeFiles/SourceCode.dir/RAM/MyStack.cpp.o: ../Headers/includer.h
 CMakeFiles/SourceCode.dir/RAM/MyStack.cpp.o: ../RAM/Headers/MyStack.h
 CMakeFiles/SourceCode.dir/RAM/MyStack.cpp.o: ../RAM/MyStack.cpp

@@ -22,7 +22,7 @@ MyStack *MyStack::getInstance()
 /*
  * Pushes value inside the stack
  */
-void MyStack::push(std::unique_ptr<IOperand> value)
+void MyStack::push(std::unique_ptr<BoxOperand> value)
 {
     (*this)._stack.push(*value.get());
 }
@@ -38,14 +38,25 @@ void MyStack::clear()
     }
 }
 
-std::unique_ptr<IOperand> MyStack::pop()
+BoxOperand *MyStack::pop()
 {
-    TypedOperand<int> *val = (*this)._stack.top();
-    //return std::unique_ptr<IOperand>(_stack.pop());
+    BoxOperand val = (*this)._stack.top();
+    _stack.pop();
+    return &val;
 }
-
-void MyStack::dup()
-{
-    IOperand buffer = _stack.pop();
-
-}
+//
+//void MyStack::dup()
+//{
+//    IOperand buffer = _stack.pop();
+//
+//}
+//
+//void MyStack::swap()
+//{
+//
+//}
+//
+//void MyStack::dump()
+//{
+//
+//}

@@ -200,6 +200,45 @@ CMakeFiles/SourceCode.dir/AVMException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SourceCode.dir/AVMException.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMException.cpp -o CMakeFiles/SourceCode.dir/AVMException.cpp.s
 
+CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o: CMakeFiles/SourceCode.dir/flags.make
+CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o: ../CPU/BoxOperand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o -c /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/BoxOperand.cpp
+
+CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/BoxOperand.cpp > CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.i
+
+CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/BoxOperand.cpp -o CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.s
+
+CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.o: CMakeFiles/SourceCode.dir/flags.make
+CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.o: ../CPU/ValueConverter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.o -c /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/ValueConverter.cpp
+
+CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/ValueConverter.cpp > CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.i
+
+CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/ValueConverter.cpp -o CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.s
+
+CMakeFiles/SourceCode.dir/CPU/Converter.cpp.o: CMakeFiles/SourceCode.dir/flags.make
+CMakeFiles/SourceCode.dir/CPU/Converter.cpp.o: ../CPU/Converter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SourceCode.dir/CPU/Converter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SourceCode.dir/CPU/Converter.cpp.o -c /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Converter.cpp
+
+CMakeFiles/SourceCode.dir/CPU/Converter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SourceCode.dir/CPU/Converter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Converter.cpp > CMakeFiles/SourceCode.dir/CPU/Converter.cpp.i
+
+CMakeFiles/SourceCode.dir/CPU/Converter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SourceCode.dir/CPU/Converter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Converter.cpp -o CMakeFiles/SourceCode.dir/CPU/Converter.cpp.s
+
 # Object files for target SourceCode
 SourceCode_OBJECTS = \
 "CMakeFiles/SourceCode.dir/main.cpp.o" \
@@ -212,7 +251,10 @@ SourceCode_OBJECTS = \
 "CMakeFiles/SourceCode.dir/IO/Parser.cpp.o" \
 "CMakeFiles/SourceCode.dir/CPU/TypedOperand.cpp.o" \
 "CMakeFiles/SourceCode.dir/IO/Periferal.cpp.o" \
-"CMakeFiles/SourceCode.dir/AVMException.cpp.o"
+"CMakeFiles/SourceCode.dir/AVMException.cpp.o" \
+"CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o" \
+"CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.o" \
+"CMakeFiles/SourceCode.dir/CPU/Converter.cpp.o"
 
 # External object files for target SourceCode
 SourceCode_EXTERNAL_OBJECTS =
@@ -228,9 +270,12 @@ SourceCode: CMakeFiles/SourceCode.dir/IO/Parser.cpp.o
 SourceCode: CMakeFiles/SourceCode.dir/CPU/TypedOperand.cpp.o
 SourceCode: CMakeFiles/SourceCode.dir/IO/Periferal.cpp.o
 SourceCode: CMakeFiles/SourceCode.dir/AVMException.cpp.o
+SourceCode: CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o
+SourceCode: CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.o
+SourceCode: CMakeFiles/SourceCode.dir/CPU/Converter.cpp.o
 SourceCode: CMakeFiles/SourceCode.dir/build.make
 SourceCode: CMakeFiles/SourceCode.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable SourceCode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable SourceCode"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SourceCode.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
