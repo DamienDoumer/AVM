@@ -4,6 +4,9 @@
 
 #include "Headers/MyRegister.h"
 
+/*
+ * Singleton design of my register
+ */
 MyRegister *MyRegister::instance = 0;
 MyRegister *MyRegister::getInstance()
 {

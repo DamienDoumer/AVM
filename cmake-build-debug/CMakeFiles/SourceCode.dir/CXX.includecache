@@ -6,51 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMException.cpp
-math.h
--
-Headers/includer.h
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
-
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Controller.cpp
-Headers/Controller.h
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/Controller.h
-Headers/Factory.h
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/Factory.h
-../AVMException.cpp
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMException.cpp
-
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/Controller.h
-../../IO/Headers/Parser.h
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/IO/Headers/Parser.h
-../../Headers/includer.h
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
-
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/Factory.h
-memory
--
-../../Headers/includer.h
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
-../../eOperandType.cpp
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/eOperandType.cpp
-TypedOperand.h
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/TypedOperand.h
-IOperand.h
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/IOperand.h
-../../AVMException.cpp
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMException.cpp
-
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/IOperand.h
 ../../Headers/includer.h
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
 ../../eOperandType.cpp
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/eOperandType.cpp
-
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/TypedOperand.h
-../../Headers/includer.h
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
-IOperand.h
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/IOperand.h
 
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
 iostream
@@ -60,11 +20,17 @@ string
 memory
 -
 
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/IO/Headers/Parser.h
-../../Headers/includer.h
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
-list
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/RAM/Headers/MyStack.h
+sys/stat.h
 -
+stack
+-
+../../CPU/Headers/IOperand.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/IOperand.h
+
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/RAM/MyStack.cpp
+Headers/MyStack.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/RAM/Headers/MyStack.h
 
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/eOperandType.cpp
 

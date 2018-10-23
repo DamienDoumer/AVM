@@ -23,7 +23,7 @@ public:
     TypedOperand (T value, eOperandType type):value(value), type(type){};
      virtual string toString() const
     {
-        return "Irecevable";
+        return std::to_string(value);
     }
     virtual eOperandType getType() const
     {

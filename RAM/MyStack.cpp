@@ -4,6 +4,9 @@
 
 #include "Headers/MyStack.h"
 
+/*
+ * Singleton design of my stack
+ */
 MyStack *MyStack::instance = 0;
 MyStack *MyStack::getInstance()
 {
