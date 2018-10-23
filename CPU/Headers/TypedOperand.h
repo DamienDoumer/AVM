@@ -11,18 +11,25 @@
 /*
  * Templated class T to be polymorphic on any type passed to it
  */
-template <class T>
+template <typename T>
 class TypedOperand : public IOperand{
 
     //The value of the operand.
     T value;
 public:
     TypedOperand (T value):value(value){};
+    virtual string toString();
+    virtual eOperandType getType();
+    virtual std::unique_ptr<IOperand> operator+(const IOperand &rhs);
+    virtual std::unique_ptr<IOperand> operator-(const IOperand &rhs);
+    virtual std::unique_ptr<IOperand> operator*(const IOperand &rhs);
+    virtual std::unique_ptr<IOperand> operator/(const IOperand &rhs);
+    virtual std::unique_ptr<IOperand> operator%(const IOperand &rhs);
+    virtual ~TypedOperand() override {};
     std::unique_ptr<T> getValue()
     {
         return value;
     }
 };
-
 
 #endif //SOURCECODE_ITYPEDOPERAND_H

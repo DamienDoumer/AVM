@@ -3,6 +3,7 @@
 //
 
 #include "Headers/Controller.h"
+#include "Headers/Factory.h"
 
 Controller::Controller()
 {}
@@ -24,6 +25,7 @@ int Controller::listenToCommands()
             cout << "Please enter a command for the VM to exexute.\n";
             getline(cin, command);
             parsedCommand = parser.parseCommand(command);
+            makeOperand(std::get<1>(parsedCommand), std::get<2>(parsedCommand));
         }
     }
     catch (exception& e)
@@ -38,5 +40,27 @@ int Controller::listenToCommands()
 
 void Controller::makeOperand(string type, string value)
 {
+    if(type == "Int8")
+    {
+        std::unique_ptr<TypedOperand<int>> op = Factory<int>::createOperand(eOperandType::Int8, value);
+    }
+    else if(type == "Int16")
+    {
 
+    }
+    else if("Int32")
+    {
+
+    }
+    else if(type == "Float") {
+
+    }
+    else if(type == "Double")
+    {
+
+    }
+    else if(type == "BigDecimal")
+    {
+
+    }
 }

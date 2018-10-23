@@ -90,9 +90,6 @@
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Controller.cpp">
 			<Option target="SourceCode"/>
 		</Unit>
-		<Unit filename="/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Factory.cpp">
-			<Option target="SourceCode"/>
-		</Unit>
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/Controller.h">
 			<Option target="SourceCode"/>
 		</Unit>

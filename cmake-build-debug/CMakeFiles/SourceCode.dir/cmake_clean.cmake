@@ -3,7 +3,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/SourceCode.dir/includer.cpp.o"
   "CMakeFiles/SourceCode.dir/CPU/IOperand.cpp.o"
   "CMakeFiles/SourceCode.dir/eOperandType.cpp.o"
-  "CMakeFiles/SourceCode.dir/CPU/Factory.cpp.o"
   "CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o"
   "CMakeFiles/SourceCode.dir/RAM/MyStack.cpp.o"
   "CMakeFiles/SourceCode.dir/RAM/MyRegister.cpp.o"

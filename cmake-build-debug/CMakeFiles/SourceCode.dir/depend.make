@@ -6,12 +6,17 @@ CMakeFiles/SourceCode.dir/AVMException.cpp.o: ../Headers/includer.h
 
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/Controller.cpp
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/Headers/Controller.h
+CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/Headers/Factory.h
+CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/Headers/IOperand.h
+CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/Headers/TypedOperand.h
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../Headers/includer.h
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../IO/Headers/Parser.h
+CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../eOperandType.cpp
 
 CMakeFiles/SourceCode.dir/CPU/Factory.cpp.o: ../CPU/Factory.cpp
 CMakeFiles/SourceCode.dir/CPU/Factory.cpp.o: ../CPU/Headers/Factory.h
 CMakeFiles/SourceCode.dir/CPU/Factory.cpp.o: ../CPU/Headers/IOperand.h
+CMakeFiles/SourceCode.dir/CPU/Factory.cpp.o: ../CPU/Headers/TypedOperand.h
 CMakeFiles/SourceCode.dir/CPU/Factory.cpp.o: ../Headers/includer.h
 CMakeFiles/SourceCode.dir/CPU/Factory.cpp.o: ../eOperandType.cpp
 

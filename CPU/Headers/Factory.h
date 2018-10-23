@@ -9,9 +9,16 @@
 #include "../../Headers/includer.h"
 #include "../../eOperandType.cpp"
 #include "IOperand.h"
+#include "TypedOperand.h"
 
+template <class T>
 class Factory {
-    static std::unique_ptr<IOperand> createOperand(eOperandType type, const std::string& value);
+public:
+    static std::unique_ptr<TypedOperand<T>> createOperand(eOperandType type,
+            const std::string& value)
+    {
+        return nullptr;
+    }
 };
 
 #endif //SOURCECODE_FACTORY_H

@@ -177,33 +177,6 @@ CPU/Controller.cpp.s:
 	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/CPU/Controller.cpp.s
 .PHONY : CPU/Controller.cpp.s
 
-CPU/Factory.o: CPU/Factory.cpp.o
-
-.PHONY : CPU/Factory.o
-
-# target to build an object file
-CPU/Factory.cpp.o:
-	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/CPU/Factory.cpp.o
-.PHONY : CPU/Factory.cpp.o
-
-CPU/Factory.i: CPU/Factory.cpp.i
-
-.PHONY : CPU/Factory.i
-
-# target to preprocess a source file
-CPU/Factory.cpp.i:
-	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/CPU/Factory.cpp.i
-.PHONY : CPU/Factory.cpp.i
-
-CPU/Factory.s: CPU/Factory.cpp.s
-
-.PHONY : CPU/Factory.s
-
-# target to generate assembly for a file
-CPU/Factory.cpp.s:
-	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/CPU/Factory.cpp.s
-.PHONY : CPU/Factory.cpp.s
-
 CPU/IOperand.o: CPU/IOperand.cpp.o
 
 .PHONY : CPU/IOperand.o
@@ -462,9 +435,6 @@ help:
 	@echo "... CPU/Controller.o"
 	@echo "... CPU/Controller.i"
 	@echo "... CPU/Controller.s"
-	@echo "... CPU/Factory.o"
-	@echo "... CPU/Factory.i"
-	@echo "... CPU/Factory.s"
 	@echo "... CPU/IOperand.o"
 	@echo "... CPU/IOperand.i"
 	@echo "... CPU/IOperand.s"

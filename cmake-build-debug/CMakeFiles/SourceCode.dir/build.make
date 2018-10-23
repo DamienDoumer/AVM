@@ -109,22 +109,9 @@ CMakeFiles/SourceCode.dir/eOperandType.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SourceCode.dir/eOperandType.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/eOperandType.cpp -o CMakeFiles/SourceCode.dir/eOperandType.cpp.s
 
-CMakeFiles/SourceCode.dir/CPU/Factory.cpp.o: CMakeFiles/SourceCode.dir/flags.make
-CMakeFiles/SourceCode.dir/CPU/Factory.cpp.o: ../CPU/Factory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SourceCode.dir/CPU/Factory.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SourceCode.dir/CPU/Factory.cpp.o -c /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Factory.cpp
-
-CMakeFiles/SourceCode.dir/CPU/Factory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SourceCode.dir/CPU/Factory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Factory.cpp > CMakeFiles/SourceCode.dir/CPU/Factory.cpp.i
-
-CMakeFiles/SourceCode.dir/CPU/Factory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SourceCode.dir/CPU/Factory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Factory.cpp -o CMakeFiles/SourceCode.dir/CPU/Factory.cpp.s
-
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: CMakeFiles/SourceCode.dir/flags.make
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/Controller.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o -c /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Controller.cpp
 
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.i: cmake_force
@@ -137,7 +124,7 @@ CMakeFiles/SourceCode.dir/CPU/Controller.cpp.s: cmake_force
 
 CMakeFiles/SourceCode.dir/RAM/MyStack.cpp.o: CMakeFiles/SourceCode.dir/flags.make
 CMakeFiles/SourceCode.dir/RAM/MyStack.cpp.o: ../RAM/MyStack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SourceCode.dir/RAM/MyStack.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SourceCode.dir/RAM/MyStack.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SourceCode.dir/RAM/MyStack.cpp.o -c /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/RAM/MyStack.cpp
 
 CMakeFiles/SourceCode.dir/RAM/MyStack.cpp.i: cmake_force
@@ -150,7 +137,7 @@ CMakeFiles/SourceCode.dir/RAM/MyStack.cpp.s: cmake_force
 
 CMakeFiles/SourceCode.dir/RAM/MyRegister.cpp.o: CMakeFiles/SourceCode.dir/flags.make
 CMakeFiles/SourceCode.dir/RAM/MyRegister.cpp.o: ../RAM/MyRegister.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SourceCode.dir/RAM/MyRegister.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SourceCode.dir/RAM/MyRegister.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SourceCode.dir/RAM/MyRegister.cpp.o -c /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/RAM/MyRegister.cpp
 
 CMakeFiles/SourceCode.dir/RAM/MyRegister.cpp.i: cmake_force
@@ -163,7 +150,7 @@ CMakeFiles/SourceCode.dir/RAM/MyRegister.cpp.s: cmake_force
 
 CMakeFiles/SourceCode.dir/IO/Parser.cpp.o: CMakeFiles/SourceCode.dir/flags.make
 CMakeFiles/SourceCode.dir/IO/Parser.cpp.o: ../IO/Parser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SourceCode.dir/IO/Parser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SourceCode.dir/IO/Parser.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SourceCode.dir/IO/Parser.cpp.o -c /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/IO/Parser.cpp
 
 CMakeFiles/SourceCode.dir/IO/Parser.cpp.i: cmake_force
@@ -176,7 +163,7 @@ CMakeFiles/SourceCode.dir/IO/Parser.cpp.s: cmake_force
 
 CMakeFiles/SourceCode.dir/CPU/TypedOperand.cpp.o: CMakeFiles/SourceCode.dir/flags.make
 CMakeFiles/SourceCode.dir/CPU/TypedOperand.cpp.o: ../CPU/TypedOperand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SourceCode.dir/CPU/TypedOperand.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SourceCode.dir/CPU/TypedOperand.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SourceCode.dir/CPU/TypedOperand.cpp.o -c /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/TypedOperand.cpp
 
 CMakeFiles/SourceCode.dir/CPU/TypedOperand.cpp.i: cmake_force
@@ -189,7 +176,7 @@ CMakeFiles/SourceCode.dir/CPU/TypedOperand.cpp.s: cmake_force
 
 CMakeFiles/SourceCode.dir/IO/Periferal.cpp.o: CMakeFiles/SourceCode.dir/flags.make
 CMakeFiles/SourceCode.dir/IO/Periferal.cpp.o: ../IO/Periferal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SourceCode.dir/IO/Periferal.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SourceCode.dir/IO/Periferal.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SourceCode.dir/IO/Periferal.cpp.o -c /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/IO/Periferal.cpp
 
 CMakeFiles/SourceCode.dir/IO/Periferal.cpp.i: cmake_force
@@ -202,7 +189,7 @@ CMakeFiles/SourceCode.dir/IO/Periferal.cpp.s: cmake_force
 
 CMakeFiles/SourceCode.dir/AVMException.cpp.o: CMakeFiles/SourceCode.dir/flags.make
 CMakeFiles/SourceCode.dir/AVMException.cpp.o: ../AVMException.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SourceCode.dir/AVMException.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SourceCode.dir/AVMException.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SourceCode.dir/AVMException.cpp.o -c /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMException.cpp
 
 CMakeFiles/SourceCode.dir/AVMException.cpp.i: cmake_force
@@ -219,7 +206,6 @@ SourceCode_OBJECTS = \
 "CMakeFiles/SourceCode.dir/includer.cpp.o" \
 "CMakeFiles/SourceCode.dir/CPU/IOperand.cpp.o" \
 "CMakeFiles/SourceCode.dir/eOperandType.cpp.o" \
-"CMakeFiles/SourceCode.dir/CPU/Factory.cpp.o" \
 "CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o" \
 "CMakeFiles/SourceCode.dir/RAM/MyStack.cpp.o" \
 "CMakeFiles/SourceCode.dir/RAM/MyRegister.cpp.o" \
@@ -235,7 +221,6 @@ SourceCode: CMakeFiles/SourceCode.dir/main.cpp.o
 SourceCode: CMakeFiles/SourceCode.dir/includer.cpp.o
 SourceCode: CMakeFiles/SourceCode.dir/CPU/IOperand.cpp.o
 SourceCode: CMakeFiles/SourceCode.dir/eOperandType.cpp.o
-SourceCode: CMakeFiles/SourceCode.dir/CPU/Factory.cpp.o
 SourceCode: CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o
 SourceCode: CMakeFiles/SourceCode.dir/RAM/MyStack.cpp.o
 SourceCode: CMakeFiles/SourceCode.dir/RAM/MyRegister.cpp.o
@@ -245,7 +230,7 @@ SourceCode: CMakeFiles/SourceCode.dir/IO/Periferal.cpp.o
 SourceCode: CMakeFiles/SourceCode.dir/AVMException.cpp.o
 SourceCode: CMakeFiles/SourceCode.dir/build.make
 SourceCode: CMakeFiles/SourceCode.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable SourceCode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable SourceCode"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SourceCode.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
