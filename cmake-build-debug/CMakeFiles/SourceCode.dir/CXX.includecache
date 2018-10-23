@@ -12,6 +12,12 @@ math.h
 Headers/includer.h
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
 
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMWarnException.cpp
+math.h
+-
+Headers/includer.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
+
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Controller.cpp
 Headers/Controller.h
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/Controller.h
@@ -19,6 +25,8 @@ Headers/Factory.h
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/Factory.h
 ../AVMException.cpp
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMException.cpp
+../RAM/Headers/MyStack.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/RAM/Headers/MyStack.h
 
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/BoxOperand.h
 IOperand.h
@@ -89,6 +97,28 @@ memory
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
 list
 -
+
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/RAM/Headers/MyStack.h
+sys/stat.h
+-
+stack
+-
+../../CPU/Headers/IOperand.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/IOperand.h
+../../CPU/Headers/TypedOperand.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/TypedOperand.h
+../../CPU/Headers/BoxOperand.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/BoxOperand.h
+
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/RAM/MyStack.cpp
+Headers/MyStack.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/RAM/Headers/MyStack.h
+../AVMException.cpp
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMException.cpp
+../CPU/Headers/TypedOperand.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/TypedOperand.h
+../AVMWarnException.cpp
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMWarnException.cpp
 
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/eOperandType.cpp
 

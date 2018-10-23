@@ -87,6 +87,9 @@
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMException.cpp">
 			<Option target="SourceCode"/>
 		</Unit>
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMWarnException.cpp">
+			<Option target="SourceCode"/>
+		</Unit>
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/BoxOperand.cpp">
 			<Option target="SourceCode"/>
 		</Unit>

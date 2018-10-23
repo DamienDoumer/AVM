@@ -5,14 +5,12 @@
 #ifndef SOURCECODE_MYSTACK_H
 #define SOURCECODE_MYSTACK_H
 
-
 #include <sys/stat.h>
 #include <stack>
 using std::stack;
 #include "../../CPU/Headers/IOperand.h"
 #include "../../CPU/Headers/TypedOperand.h"
 #include "../../CPU/Headers/BoxOperand.h"
-
 
 class MyStack {
 private:
@@ -28,16 +26,7 @@ public:
     void dup();
     void swap();
     void dump();
-    bool assert();
-    void add();
-    void sub();
-    void mul();
-    void div();
-    void mod();
-    void load();
-    void store();
-    void print();
-    void exit();
+    bool assert(BoxOperand operand);
 };
 
 #endif //SOURCECODE_MYSTACK_H

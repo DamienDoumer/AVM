@@ -4,6 +4,9 @@
 CMakeFiles/SourceCode.dir/AVMException.cpp.o
  /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMException.cpp
  /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
+CMakeFiles/SourceCode.dir/AVMWarnException.cpp.o
+ /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMWarnException.cpp
+ /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
 CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o
  /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/BoxOperand.cpp
  /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/BoxOperand.h
@@ -22,6 +25,7 @@ CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o
  /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/ValueConverter.cpp
  /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
  /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/IO/Headers/Parser.h
+ /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/RAM/Headers/MyStack.h
  /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/eOperandType.cpp
 CMakeFiles/SourceCode.dir/CPU/Converter.cpp.o
  /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMException.cpp
@@ -58,6 +62,7 @@ CMakeFiles/SourceCode.dir/RAM/MyRegister.cpp.o
  /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/RAM/MyRegister.cpp
 CMakeFiles/SourceCode.dir/RAM/MyStack.cpp.o
  /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMException.cpp
+ /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMWarnException.cpp
  /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/BoxOperand.h
  /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/IOperand.h
  /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/TypedOperand.h

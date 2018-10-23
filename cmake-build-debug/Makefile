@@ -150,6 +150,33 @@ AVMException.cpp.s:
 	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/AVMException.cpp.s
 .PHONY : AVMException.cpp.s
 
+AVMWarnException.o: AVMWarnException.cpp.o
+
+.PHONY : AVMWarnException.o
+
+# target to build an object file
+AVMWarnException.cpp.o:
+	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/AVMWarnException.cpp.o
+.PHONY : AVMWarnException.cpp.o
+
+AVMWarnException.i: AVMWarnException.cpp.i
+
+.PHONY : AVMWarnException.i
+
+# target to preprocess a source file
+AVMWarnException.cpp.i:
+	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/AVMWarnException.cpp.i
+.PHONY : AVMWarnException.cpp.i
+
+AVMWarnException.s: AVMWarnException.cpp.s
+
+.PHONY : AVMWarnException.s
+
+# target to generate assembly for a file
+AVMWarnException.cpp.s:
+	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/AVMWarnException.cpp.s
+.PHONY : AVMWarnException.cpp.s
+
 CPU/BoxOperand.o: CPU/BoxOperand.cpp.o
 
 .PHONY : CPU/BoxOperand.o
@@ -513,6 +540,9 @@ help:
 	@echo "... AVMException.o"
 	@echo "... AVMException.i"
 	@echo "... AVMException.s"
+	@echo "... AVMWarnException.o"
+	@echo "... AVMWarnException.i"
+	@echo "... AVMWarnException.s"
 	@echo "... CPU/BoxOperand.o"
 	@echo "... CPU/BoxOperand.i"
 	@echo "... CPU/BoxOperand.s"

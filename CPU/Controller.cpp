@@ -5,6 +5,7 @@
 #include "Headers/Controller.h"
 #include "Headers/Factory.h"
 #include "../AVMException.cpp"
+#include "../RAM/Headers/MyStack.h"
 
 Controller::Controller()
 {}
@@ -50,30 +51,36 @@ void Controller::makeOperand(string type, string value)
         {
             std::unique_ptr<TypedOperand<int>> op = Factory<int>::createIntOperand(eOperandType::Int8, value);
             BoxOperand *bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
+            MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(bo));
         }
         else if(type == "Int16")
         {
             std::unique_ptr<TypedOperand<int>> op = Factory<int>::createIntOperand(eOperandType::Int16, value);
             BoxOperand *bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
+            MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(bo));
         }
         else if(type == "Int32")
         {
             std::unique_ptr<TypedOperand<int>> op = Factory<int>::createIntOperand(eOperandType::Int32, value);
             BoxOperand *bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
+            MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(bo));
         }
         else if(type == "Float") {
             std::unique_ptr<TypedOperand<float>> op = Factory<float>::createFloat(value);
             BoxOperand *bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
+            MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(bo));
         }
         else if(type == "Double")
         {
             std::unique_ptr<TypedOperand<double>> op = Factory<double>::createDouble(value);
             BoxOperand *bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
+            MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(bo));
         }
         else if(type == "BigDecimal")
         {
             std::unique_ptr<TypedOperand<long double>> op = Factory<long double>::createBigDecimal(value);
             BoxOperand *bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
+            MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(bo));
         }
     }
     catch (std::invalid_argument e) {
