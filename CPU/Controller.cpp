@@ -6,6 +6,9 @@
 #include "Headers/Factory.h"
 #include "../AVMException.cpp"
 #include "../RAM/Headers/MyStack.h"
+#include <algorithm>
+#include <regex>
+using namespace std::regex_constants;
 
 Controller::Controller()
 {}
@@ -27,7 +30,8 @@ int Controller::listenToCommands()
             cout << "Please enter a command for the VM to exexute.\n";
             getline(cin, command);
             parsedCommand = parser.parseCommand(command);
-            makeOperand(std::get<1>(parsedCommand), std::get<2>(parsedCommand));
+            performInstructions(std::get<0>(parsedCommand));
+            performInstructions(std::get<0>(parsedCommand), std::get<1>(parsedCommand), std::get<2>(parsedCommand));
         }
     }
     catch (exception& e)
@@ -43,43 +47,45 @@ int Controller::listenToCommands()
 /*
  * Use the factory to make a new operand of coresponding type
  */
-void Controller::makeOperand(string type, string value)
+BoxOperand Controller::makeOperand(string type, string value)
 {
+    BoxOperand *bo = NULL;
+
     try
     {
         if(type == "Int8")
         {
             std::unique_ptr<TypedOperand<int>> op = Factory<int>::createIntOperand(eOperandType::Int8, value);
-            BoxOperand *bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
+            bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
             MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(bo));
         }
         else if(type == "Int16")
         {
             std::unique_ptr<TypedOperand<int>> op = Factory<int>::createIntOperand(eOperandType::Int16, value);
-            BoxOperand *bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
+            bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
             MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(bo));
         }
         else if(type == "Int32")
         {
             std::unique_ptr<TypedOperand<int>> op = Factory<int>::createIntOperand(eOperandType::Int32, value);
-            BoxOperand *bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
+            bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
             MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(bo));
         }
         else if(type == "Float") {
             std::unique_ptr<TypedOperand<float>> op = Factory<float>::createFloat(value);
-            BoxOperand *bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
+            bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
             MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(bo));
         }
         else if(type == "Double")
         {
             std::unique_ptr<TypedOperand<double>> op = Factory<double>::createDouble(value);
-            BoxOperand *bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
+            bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
             MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(bo));
         }
         else if(type == "BigDecimal")
         {
             std::unique_ptr<TypedOperand<long double>> op = Factory<long double>::createBigDecimal(value);
-            BoxOperand *bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
+            bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
             MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(bo));
         }
     }
@@ -90,4 +96,53 @@ void Controller::makeOperand(string type, string value)
         char *msg = "The value passed is out of the range of the type passed";
         throw AVMException(msg);
     }
+    return *bo;
 }
+
+/*
+ * Execute parameterized commands using Command to Delegate Match
+ */
+void Controller::performInstructions(string command, string operandType, string value)
+{
+    std::smatch cmdMatch;
+    typedef void (Controller::*commandPerformer)(string, string);
+    typedef std::map<std::string, commandPerformer> commandActionMap;
+    std::map<std::string, commandPerformer>::iterator iterator;
+    commandActionMap actionMap;
+
+    actionMap["Push"] = &Controller::push;
+    actionMap["Assert"] = &Controller::assert;
+    for(iterator = actionMap.begin(); iterator != actionMap.end(); iterator++)
+    {
+        std::regex caseInsensitiveRegex(iterator->first, ECMAScript | icase );
+        if(std::regex_search(command, cmdMatch, caseInsensitiveRegex))
+        {
+            Controller c;
+            (c.*(iterator->second))(operandType, value);
+        }
+    }
+}
+
+void Controller::assert(string type, string value)
+{
+    BoxOperand op =  makeOperand(type, value);
+    bool eq = MyStack::getInstance()->assert(op);
+    if(eq)
+        cout << "Assertion passed, operands are equal";
+}
+
+void Controller::push(string type, string value)
+{
+    BoxOperand *op;
+    *op = makeOperand(type, value);
+    MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(op));
+}
+
+void Controller::performInstructions(string command) {
+
+    string commands[] = { "Push", "Pop", "Clear", "Dup", "Swap", "Dump",
+                          "Assert", "Add", "Sub", "Mul", "Div", "Mod",
+                          "Load", "Store", "Print", "Exit" };
+}
+
+

@@ -75,8 +75,11 @@ CMakeFiles/SourceCode.dir/eOperandType.cpp.o: ../eOperandType.cpp
 CMakeFiles/SourceCode.dir/includer.cpp.o: ../Headers/includer.h
 CMakeFiles/SourceCode.dir/includer.cpp.o: ../includer.cpp
 
+CMakeFiles/SourceCode.dir/main.cpp.o: ../CPU/Headers/BoxOperand.h
 CMakeFiles/SourceCode.dir/main.cpp.o: ../CPU/Headers/Controller.h
+CMakeFiles/SourceCode.dir/main.cpp.o: ../CPU/Headers/IOperand.h
 CMakeFiles/SourceCode.dir/main.cpp.o: ../Headers/includer.h
 CMakeFiles/SourceCode.dir/main.cpp.o: ../IO/Headers/Parser.h
+CMakeFiles/SourceCode.dir/main.cpp.o: ../eOperandType.cpp
 CMakeFiles/SourceCode.dir/main.cpp.o: ../main.cpp
 

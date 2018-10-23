@@ -7,14 +7,28 @@
 
 #include "../../IO/Headers/Parser.h"
 #include "../../Headers/includer.h"
+#include "../../eOperandType.cpp"
+#include "BoxOperand.h"
 
 class Controller
 {
     Parser parser;
 public:
     int listenToCommands();
-    void makeOperand(string type, string value);
-    void performiInstructions();
+    BoxOperand makeOperand(string type, string value);
+    void performInstructions(string command);
+    void performInstructions(string command, string operandType, string value);
+    void push(string type, string value);
+    void assert(string type, string value);
+    void add();
+    void sub();
+    void mul();
+    void div();
+    void mod();
+    void load();
+    void store();
+    void print();
+    void exit();
     Controller();
 };
 

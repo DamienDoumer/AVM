@@ -76,7 +76,10 @@ CMakeFiles/SourceCode.dir/includer.cpp.o
  /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
  /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/includer.cpp
 CMakeFiles/SourceCode.dir/main.cpp.o
+ /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/BoxOperand.h
  /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/Controller.h
+ /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/IOperand.h
  /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
  /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/IO/Headers/Parser.h
+ /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/eOperandType.cpp
  /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/main.cpp
