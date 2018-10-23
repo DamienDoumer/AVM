@@ -4,6 +4,7 @@
 
 #include "Headers/Controller.h"
 #include "Headers/Factory.h"
+#include "../AVMException.cpp"
 
 Controller::Controller()
 {}
@@ -40,17 +41,9 @@ int Controller::listenToCommands()
 
 void Controller::makeOperand(string type, string value)
 {
-    if(type == "Int8")
+    if(type == "Int8" || type == "Int16" || type == "Int32")
     {
         std::unique_ptr<TypedOperand<int>> op = Factory<int>::createOperand(eOperandType::Int8, value);
-    }
-    else if(type == "Int16")
-    {
-
-    }
-    else if("Int32")
-    {
-
     }
     else if(type == "Float") {
 

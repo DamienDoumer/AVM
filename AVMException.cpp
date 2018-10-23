@@ -2,6 +2,7 @@
 // Created by dtohi on 10/21/2018.
 //
 
+#pragma once
 #include <math.h>
 #include "Headers/includer.h"
 
