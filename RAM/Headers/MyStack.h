@@ -10,12 +10,14 @@
 #include <stack>
 using std::stack;
 #include "../../CPU/Headers/IOperand.h"
+#include "../../CPU/Headers/TypedOperand.h"
 
+template<typename T>
 class MyStack {
 private:
     static MyStack *instance;
     MyStack();
-    stack<IOperand> _stack;
+    std::stack<TypedOperand<T>> _stack;
 
 public:
     static MyStack *getInstance();
