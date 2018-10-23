@@ -39,21 +39,42 @@ int Controller::listenToCommands()
     return returnVal;
 }
 
+/*
+ * Use the factory to make a new operand of coresponding type
+ */
 void Controller::makeOperand(string type, string value)
 {
-    if(type == "Int8" || type == "Int16" || type == "Int32")
+    try
     {
-        std::unique_ptr<TypedOperand<int>> op = Factory<int>::createOperand(eOperandType::Int8, value);
+        if(type == "Int8")
+        {
+            std::unique_ptr<TypedOperand<int>> op = Factory<int>::createIntOperand(eOperandType::Int8, value);
+        }
+        else if(type == "Int16")
+        {
+            std::unique_ptr<TypedOperand<int>> op = Factory<int>::createIntOperand(eOperandType::Int16, value);
+        }
+        else if(type == "Int32")
+        {
+            std::unique_ptr<TypedOperand<int>> op = Factory<int>::createIntOperand(eOperandType::Int32, value);
+        }
+        else if(type == "Float") {
+            std::unique_ptr<TypedOperand<float>> op = Factory<float>::createFloat(value);
+        }
+        else if(type == "Double")
+        {
+            std::unique_ptr<TypedOperand<double>> op = Factory<double>::createDouble(value);
+        }
+        else if(type == "BigDecimal")
+        {
+            std::unique_ptr<TypedOperand<long double>> op = Factory<long double>::createBigDecimal(value);
+        }
     }
-    else if(type == "Float") {
-
+    catch (std::invalid_argument e) {
+        throw AVMException("The value passed as number is not valid");
     }
-    else if(type == "Double")
-    {
-
-    }
-    else if(type == "BigDecimal")
-    {
-
+    catch (std::out_of_range e) {
+        char *msg = "The value passed is out of the range of the type passed";
+        throw AVMException(msg);
     }
 }

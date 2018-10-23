@@ -15,15 +15,50 @@
 template<class T>
 class Factory {
 
-    /*
-     * Get the value of the operand to be created
-     * This value will be of type T
-     */
-    static T getOperandValue(string &value) {
-
+public:
+    static std::unique_ptr<TypedOperand<int>> createInt8(const string &value)
+    {
+        return createIntOperand(eOperandType::Int8, value);
     }
 
-public:
+    static std::unique_ptr<TypedOperand<int>> createInt16(const string &value)
+    {
+        return createIntOperand(eOperandType::Int16, value);
+    }
+
+    static std::unique_ptr<TypedOperand<int>> createInt32(const string &value)
+    {
+        return createIntOperand(eOperandType::Int32, value);
+    }
+
+    static std::unique_ptr<TypedOperand<float>> createFloat(const string &value)
+    {
+        float numVal = std::stod(value);
+
+        return std::unique_ptr<TypedOperand<float>>(new TypedOperand<float>(numVal, eOperandType::Float));
+    }
+
+    static std::unique_ptr<TypedOperand<double>> createDouble(const string &value)
+    {
+        double numVal = std::stod(value);
+
+        return std::unique_ptr<TypedOperand<double>>(new TypedOperand<double>(numVal, eOperandType::Double));
+    }
+
+    static std::unique_ptr<TypedOperand<long double>> createBigDecimal(const string &value)
+    {
+        long double numVal = std::stold(value);
+
+        return std::unique_ptr<TypedOperand<long double >>(new TypedOperand<long double>(numVal, eOperandType::BigDecimal));
+    }
+
+    static std::unique_ptr<TypedOperand<int>> createIntOperand(eOperandType type, const string &value)
+    {
+        int numVal = std::stoi(value);
+
+        return std::unique_ptr<TypedOperand<int>>(new TypedOperand<int>(numVal, type));
+    }
+
     static std::unique_ptr<TypedOperand<T>> createOperand(eOperandType type,
                                                           const std::string &value) {
         try {
@@ -32,9 +67,13 @@ public:
                 case eOperandType::Int8:
                 case eOperandType::Int16:
                 case eOperandType::Int32:
-                    int numVal = std::stoi(value);
-
-                    return std::unique_ptr<TypedOperand<int>>(new TypedOperand<int>(numVal, type));
+                    return createIntOperand(type, value);
+                case eOperandType::Float :
+                    return createFloat(value);
+                case eOperandType::Double :
+                    return createDouble(value);
+                case eOperandType::BigDecimal :
+                    return createBigDecimal(value);
             }
         }
         catch (std::invalid_argument e) {
