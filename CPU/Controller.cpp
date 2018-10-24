@@ -138,9 +138,99 @@ void Controller::push(string type, string value)
 
 void Controller::performInstructions(string command) {
 
-    string commands[] = { "Push", "Pop", "Clear", "Dup", "Swap", "Dump",
-                          "Assert", "Add", "Sub", "Mul", "Div", "Mod",
+    string commands[] = { "Pop", "Clear", "Dup", "Swap", "Dump",
+                          "Add", "Sub", "Mul", "Div", "Mod",
                           "Load", "Store", "Print", "Exit" };
+    std::smatch cmdMatch;
+    std::map<std::string, simpleCommandPerformer>::iterator iterator;
+    simpleCommandActionMap actionMap;
+
+    actionMap["Add"] = &Controller::add;
+    actionMap["Swap"] = &Controller::swap;
+    actionMap["Sub"] = &Controller::sub;
+    actionMap["Mul"] = &Controller::mul;
+    actionMap["Div"] = &Controller::div;
+    actionMap["Mod"] = &Controller::mod;
+    actionMap["Load"] = &Controller::load;
+    actionMap["Store"] = &Controller::store;
+    actionMap["Print"] = &Controller::print;
+    actionMap["Exit"] = &Controller::exit;
+    actionMap["Pop"] = &Controller::pop;
+    actionMap["Dump"] = &Controller::dump;
+    actionMap["Dup"] = &Controller::dup;
+    actionMap["Clear"] = &Controller::clear;
+    for(iterator = actionMap.begin(); iterator != actionMap.end(); iterator++)
+    {
+        std::regex caseInsensitiveRegex(iterator->first, ECMAScript | icase );
+        if(std::regex_search(command, cmdMatch, caseInsensitiveRegex))
+        {
+            Controller c;
+            (this->*(iterator->second))();
+        }
+    }
 }
 
+void Controller::add() {
 
+}
+
+void Controller::swap()
+{
+    MyStack::getInstance()->swap();
+    cout << "Swap completed\n";
+}
+
+void Controller::sub() {
+
+}
+
+void Controller::mul() {
+
+}
+
+void Controller::div() {
+
+}
+
+void Controller::mod() {
+
+}
+
+void Controller::load() {
+
+}
+
+void Controller::store() {
+
+}
+
+void Controller::print() {
+
+}
+
+void Controller::pop()
+{
+    BoxOperand *poped = MyStack::getInstance()->pop();
+    cout << poped->toString() << " Was poped" << " with type: " << std::to_string(poped->getType()) << "\n";
+}
+
+void Controller::exit() {
+ throw AVMWarnException("Exiting simulator");
+}
+
+void Controller::dump()
+{
+    MyStack::getInstance()->dump();
+}
+
+void Controller::dup()
+{
+    MyStack::getInstance()->dup();
+    cout << "Duplication Funished\n";
+}
+
+void Controller::clear()
+{
+    MyStack::getInstance()->clear();
+    cout << "Stack cleared\n";
+}
