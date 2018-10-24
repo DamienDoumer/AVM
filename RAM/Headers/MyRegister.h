@@ -6,14 +6,19 @@
 #define SOURCECODE_MYREGISTER_H
 
 
+#include "../../CPU/Headers/BoxOperand.h"
+
 class MyRegister
 {
 private:
     static MyRegister* instance;
     MyRegister();
+    BoxOperand opRegister;
 
 public:
     static MyRegister* getInstance();
+    void save(BoxOperand op);
+    BoxOperand getopRegister();
 };
 
 

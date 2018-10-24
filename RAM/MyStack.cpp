@@ -113,3 +113,15 @@ bool MyStack::assert(BoxOperand operand)
         return true;
     throw AVMWarnException("Assertion failed.");
 }
+
+void MyStack::print()
+{
+    if(_stack.empty())
+        throw AVMWarnException("Your stack is empty");
+
+    BoxOperand bo = _stack.top();
+    if (bo.getType() == eOperandType::Int8)
+        cout << bo.toString() << " Int8";
+    else
+        cout << "Top operand is not an Int8";
+}

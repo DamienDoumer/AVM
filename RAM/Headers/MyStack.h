@@ -27,6 +27,7 @@ public:
     void swap();
     void dump();
     bool assert(BoxOperand operand);
+    void print();
 };
 
 #endif //SOURCECODE_MYSTACK_H

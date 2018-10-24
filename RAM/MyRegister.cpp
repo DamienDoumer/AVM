@@ -18,3 +18,12 @@ MyRegister *MyRegister::getInstance()
 }
 
 MyRegister::MyRegister(){}
+
+void MyRegister::save(BoxOperand op)
+{
+    this->opRegister = op;
+}
+
+BoxOperand MyRegister::getopRegister() {
+    return opRegister;
+}

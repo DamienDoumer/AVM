@@ -9,6 +9,8 @@
 #include <algorithm>
 #include <regex>
 #include "../AVMWarnException.cpp"
+#include "../RAM/Headers/MyRegister.h"
+
 using namespace std::regex_constants;
 
 Controller::Controller()
@@ -193,16 +195,22 @@ void Controller::mod() {
 
 }
 
-void Controller::load() {
-
+void Controller::load()
+{
+    BoxOperand *bo;
+    *bo = MyRegister::getInstance()->getopRegister();
+    MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(bo));
 }
 
-void Controller::store() {
-
+void Controller::store()
+{
+    BoxOperand *bo = MyStack::getInstance()->pop();
+    MyRegister::getInstance()->save(*bo);
 }
 
-void Controller::print() {
-
+void Controller::print()
+{
+    MyStack::getInstance()->print();
 }
 
 void Controller::pop()

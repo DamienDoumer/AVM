@@ -16,6 +16,7 @@ class BoxOperand : public IOperand
 
 public:
     BoxOperand (string value, eOperandType type):value(value), type(type){};
+    BoxOperand(){};
     virtual string toString() const;
     virtual eOperandType getType() const;
     virtual std::unique_ptr<IOperand> operator+(const IOperand &rhs) const;
