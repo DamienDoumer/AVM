@@ -8,6 +8,7 @@
 #include "../RAM/Headers/MyStack.h"
 #include <algorithm>
 #include <regex>
+#include "../AVMWarnException.cpp"
 using namespace std::regex_constants;
 
 Controller::Controller()
@@ -132,6 +133,7 @@ void Controller::push(string type, string value)
     makeOperand(type, value, t).get();
     BoxOperand *op = new BoxOperand(value, t);
     MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(op));
+    cout << "Operand added to stack successfully";
 }
 
 void Controller::performInstructions(string command) {
