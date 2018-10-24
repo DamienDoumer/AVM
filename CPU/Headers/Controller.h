@@ -5,6 +5,7 @@
 #ifndef SOURCECODE_CONTROLLER_H
 #define SOURCECODE_CONTROLLER_H
 
+#include <map>
 #include "../../IO/Headers/Parser.h"
 #include "../../Headers/includer.h"
 #include "../../eOperandType.cpp"
@@ -13,9 +14,12 @@
 class Controller
 {
     Parser parser;
+
+    typedef void (Controller::*commandPerformer)(string, string);
+    typedef std::map<std::string, commandPerformer> commandActionMap;
 public:
     int listenToCommands();
-    BoxOperand makeOperand(string type, string value);
+    std::unique_ptr<BoxOperand> makeOperand(string type, string value, eOperandType &t);
     void performInstructions(string command);
     void performInstructions(string command, string operandType, string value);
     void push(string type, string value);

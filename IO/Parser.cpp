@@ -22,7 +22,7 @@ std::tuple<string, string, string> Parser::parseCommand(string command)
         throw AVMException("Invalid arguement count, please "
                            "format your commands properly");
     commandExtracted = findMatchingCommand(command);
-    if(commandExtracted == "Push")
+    if(commandExtracted == "Push" || commandExtracted == "Assert")
     {
         typeValTuple = findMatchingTypeAndValue(command);
     }

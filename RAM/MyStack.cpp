@@ -69,7 +69,6 @@ void MyStack::swap()
     _stack.push(*b2);
 }
 
-
 void MyStack::dump()
 {
     std::stack<BoxOperand> _bufferStack;

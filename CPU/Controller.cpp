@@ -47,7 +47,7 @@ int Controller::listenToCommands()
 /*
  * Use the factory to make a new operand of coresponding type
  */
-BoxOperand Controller::makeOperand(string type, string value)
+std::unique_ptr<BoxOperand> Controller::makeOperand(string type, string value, eOperandType &t)
 {
     BoxOperand *bo = NULL;
 
@@ -57,36 +57,30 @@ BoxOperand Controller::makeOperand(string type, string value)
         {
             std::unique_ptr<TypedOperand<int>> op = Factory<int>::createIntOperand(eOperandType::Int8, value);
             bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
-            MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(bo));
         }
         else if(type == "Int16")
         {
             std::unique_ptr<TypedOperand<int>> op = Factory<int>::createIntOperand(eOperandType::Int16, value);
             bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
-            MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(bo));
         }
         else if(type == "Int32")
         {
             std::unique_ptr<TypedOperand<int>> op = Factory<int>::createIntOperand(eOperandType::Int32, value);
             bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
-            MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(bo));
         }
         else if(type == "Float") {
             std::unique_ptr<TypedOperand<float>> op = Factory<float>::createFloat(value);
             bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
-            MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(bo));
         }
         else if(type == "Double")
         {
             std::unique_ptr<TypedOperand<double>> op = Factory<double>::createDouble(value);
             bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
-            MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(bo));
         }
         else if(type == "BigDecimal")
         {
             std::unique_ptr<TypedOperand<long double>> op = Factory<long double>::createBigDecimal(value);
             bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
-            MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(bo));
         }
     }
     catch (std::invalid_argument e) {
@@ -96,7 +90,8 @@ BoxOperand Controller::makeOperand(string type, string value)
         char *msg = "The value passed is out of the range of the type passed";
         throw AVMException(msg);
     }
-    return *bo;
+    t = bo->getType();
+    return std::unique_ptr<BoxOperand>(bo);
 }
 
 /*
@@ -105,8 +100,6 @@ BoxOperand Controller::makeOperand(string type, string value)
 void Controller::performInstructions(string command, string operandType, string value)
 {
     std::smatch cmdMatch;
-    typedef void (Controller::*commandPerformer)(string, string);
-    typedef std::map<std::string, commandPerformer> commandActionMap;
     std::map<std::string, commandPerformer>::iterator iterator;
     commandActionMap actionMap;
 
@@ -118,23 +111,26 @@ void Controller::performInstructions(string command, string operandType, string 
         if(std::regex_search(command, cmdMatch, caseInsensitiveRegex))
         {
             Controller c;
-            (c.*(iterator->second))(operandType, value);
+            (this->*(iterator->second))(operandType, value);
         }
     }
 }
 
 void Controller::assert(string type, string value)
 {
-    BoxOperand op =  makeOperand(type, value);
-    bool eq = MyStack::getInstance()->assert(op);
+    eOperandType t = eOperandType::Double;
+    makeOperand(type, value, t);
+    BoxOperand *op = new BoxOperand(value, t);
+    bool eq = MyStack::getInstance()->assert(*op);
     if(eq)
         cout << "Assertion passed, operands are equal";
 }
 
 void Controller::push(string type, string value)
 {
-    BoxOperand *op;
-    *op = makeOperand(type, value);
+    eOperandType t = eOperandType::Double;
+    makeOperand(type, value, t).get();
+    BoxOperand *op = new BoxOperand(value, t);
     MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(op));
 }
 
