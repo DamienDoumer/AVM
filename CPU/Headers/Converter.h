@@ -15,8 +15,10 @@ public:
     static void convertValue(eOperandType type,
                              const std::string &value, T &v)
     {
-        try {
-            switch (type) {
+        try
+        {
+            switch (type)
+            {
                 case eOperandType::Int8:
                 case eOperandType::Int16:
                 case eOperandType::Int32:
@@ -29,10 +31,12 @@ public:
                     v = std::stold(value);
             }
         }
-        catch (std::invalid_argument e) {
+        catch (std::invalid_argument e)
+        {
             throw AVMException("The value passed as number is not valid");
         }
-        catch (std::out_of_range e) {
+        catch (std::out_of_range e)
+        {
             char *msg = "The value passed is out of the range of the typed passed";
             throw AVMException(msg);
         }

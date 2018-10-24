@@ -50,38 +50,38 @@ BoxOperand *MyStack::pop()
 
 void MyStack::dup()
 {
+    if(_stack.empty())
+        throw AVMWarnException("The stack is empty, dup operation cannot be performed");
     BoxOperand buffer = _stack.top();
     _stack.push(buffer);
 }
 
 void MyStack::swap()
 {
-    BoxOperand *b1;
-    BoxOperand *b2;
-
     if(_stack.size() < 2)
         throw AVMWarnException("The stack does not contain up to 2 elements");
-    *b1 = _stack.top();
+    BoxOperand b1 = _stack.top();
     _stack.pop();
-    *b2 = _stack.top();
+    BoxOperand b2 = _stack.top();
     _stack.pop();
-    _stack.push(*b1);
-    _stack.push(*b2);
+    _stack.push(b1);
+    _stack.push(b2);
 }
 
 void MyStack::dump()
 {
     std::stack<BoxOperand> _bufferStack;
+    string enums[] = {"Int8", "Int16", "Int32", "Float", "Double", "BigDecimal"};
 
     if(_stack.size() < 1)
         throw AVMWarnException("Your stack is empty");
-    for(int i = 0; i < _stack.size(); i++)
+    while(!_stack.empty())
     {
-        cout << _stack.top().toString() << "\n";
+        cout << _stack.top().toString() << " " << enums[_stack.top().getType()] <<"\n";
         _bufferStack.push(_stack.top());
         _stack.pop();
     }
-    for(int i = 0; i < _bufferStack.size(); i++)
+    while (!_bufferStack.empty())
     {
         _stack.push(_bufferStack.top());
         _bufferStack.pop();

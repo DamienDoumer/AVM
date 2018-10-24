@@ -124,7 +124,7 @@ void Controller::assert(string type, string value)
     BoxOperand *op = new BoxOperand(value, t);
     bool eq = MyStack::getInstance()->assert(*op);
     if(eq)
-        cout << "Assertion passed, operands are equal";
+        cout << "Assertion passed, operands are equal\n";
 }
 
 void Controller::push(string type, string value)
@@ -133,14 +133,11 @@ void Controller::push(string type, string value)
     makeOperand(type, value, t).get();
     BoxOperand *op = new BoxOperand(value, t);
     MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(op));
-    cout << "Operand added to stack successfully";
+    cout << "Operand added to stack successfully\n";
 }
 
-void Controller::performInstructions(string command) {
-
-    string commands[] = { "Pop", "Clear", "Dup", "Swap", "Dump",
-                          "Add", "Sub", "Mul", "Div", "Mod",
-                          "Load", "Store", "Print", "Exit" };
+void Controller::performInstructions(string command)
+{
     std::smatch cmdMatch;
     std::map<std::string, simpleCommandPerformer>::iterator iterator;
     simpleCommandActionMap actionMap;
@@ -211,7 +208,8 @@ void Controller::print() {
 void Controller::pop()
 {
     BoxOperand *poped = MyStack::getInstance()->pop();
-    cout << poped->toString() << " Was poped" << " with type: " << std::to_string(poped->getType()) << "\n";
+    cout << poped->toString() << " Was poped" << " with type: " <<
+    std::to_string(poped->getType()) << "\n";
 }
 
 void Controller::exit() {
