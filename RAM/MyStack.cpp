@@ -33,12 +33,15 @@ void MyStack::push(std::unique_ptr<BoxOperand> value)
  */
 void MyStack::clear()
 {
-    while(_stack.size() != 0)
+    while(!_stack.empty())
     {
         _stack.pop();
     }
 }
 
+/*
+ * Pop and returns the first item on the stack
+ */
 BoxOperand *MyStack::pop()
 {
     if(_stack.empty())
@@ -48,6 +51,9 @@ BoxOperand *MyStack::pop()
     return &val;
 }
 
+/*
+ * Duplicates the first item on the stack
+ */
 void MyStack::dup()
 {
     if(_stack.empty())
@@ -56,6 +62,10 @@ void MyStack::dup()
     _stack.push(buffer);
 }
 
+/*
+ * Interchanges the position of the
+ * Top most items on the stack
+ */
 void MyStack::swap()
 {
     if(_stack.size() < 2)
@@ -68,6 +78,9 @@ void MyStack::swap()
     _stack.push(b2);
 }
 
+/*
+ * Traverses the stack and displays its items.
+ */
 void MyStack::dump()
 {
     std::stack<BoxOperand> _bufferStack;
@@ -88,6 +101,9 @@ void MyStack::dump()
     }
 }
 
+/*
+ * Assert that the element passed is equal to the top most element
+ */
 bool MyStack::assert(BoxOperand operand)
 {
     if(_stack.size() < 1)
