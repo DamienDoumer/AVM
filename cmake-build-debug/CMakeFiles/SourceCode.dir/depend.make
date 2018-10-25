@@ -7,6 +7,7 @@ CMakeFiles/SourceCode.dir/AVMException.cpp.o: ../Headers/includer.h
 CMakeFiles/SourceCode.dir/AVMWarnException.cpp.o: ../AVMWarnException.cpp
 CMakeFiles/SourceCode.dir/AVMWarnException.cpp.o: ../Headers/includer.h
 
+CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o: ../AVMException.cpp
 CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o: ../CPU/BoxOperand.cpp
 CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o: ../CPU/Headers/BoxOperand.h
 CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o: ../CPU/Headers/IOperand.h
@@ -59,6 +60,7 @@ CMakeFiles/SourceCode.dir/IO/Parser.cpp.o: ../IO/Parser.cpp
 CMakeFiles/SourceCode.dir/IO/Periferal.cpp.o: ../IO/Headers/Periferal.h
 CMakeFiles/SourceCode.dir/IO/Periferal.cpp.o: ../IO/Periferal.cpp
 
+CMakeFiles/SourceCode.dir/RAM/MyRegister.cpp.o: ../AVMException.cpp
 CMakeFiles/SourceCode.dir/RAM/MyRegister.cpp.o: ../CPU/Headers/BoxOperand.h
 CMakeFiles/SourceCode.dir/RAM/MyRegister.cpp.o: ../CPU/Headers/IOperand.h
 CMakeFiles/SourceCode.dir/RAM/MyRegister.cpp.o: ../Headers/includer.h
@@ -81,6 +83,7 @@ CMakeFiles/SourceCode.dir/eOperandType.cpp.o: ../eOperandType.cpp
 CMakeFiles/SourceCode.dir/includer.cpp.o: ../Headers/includer.h
 CMakeFiles/SourceCode.dir/includer.cpp.o: ../includer.cpp
 
+CMakeFiles/SourceCode.dir/main.cpp.o: ../AVMException.cpp
 CMakeFiles/SourceCode.dir/main.cpp.o: ../CPU/Headers/BoxOperand.h
 CMakeFiles/SourceCode.dir/main.cpp.o: ../CPU/Headers/Controller.h
 CMakeFiles/SourceCode.dir/main.cpp.o: ../CPU/Headers/IOperand.h

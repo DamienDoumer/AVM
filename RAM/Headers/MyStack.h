@@ -12,7 +12,8 @@ using std::stack;
 #include "../../CPU/Headers/TypedOperand.h"
 #include "../../CPU/Headers/BoxOperand.h"
 
-class MyStack {
+class MyStack
+{
 private:
     static MyStack *instance;
     MyStack(){};

@@ -8,11 +8,11 @@
 #include "../../AVMException.cpp"
 #include "../../eOperandType.cpp"
 
-class Converter {
-
+class Converter
+{
 public:
     template <typename T>
-    static void convertValue(eOperandType type,
+    static T convertValue(eOperandType type,
                              const std::string &value, T &v)
     {
         try
@@ -22,13 +22,13 @@ public:
                 case eOperandType::Int8:
                 case eOperandType::Int16:
                 case eOperandType::Int32:
-                    v = std::stoi(value);
+                    return std::stoi(value);
                 case eOperandType::Float :
-                    v = std::stof(value);
+                    return std::stof(value);
                 case eOperandType::Double :
-                    v = std::stod(value);
+                    return std::stod(value);
                 case eOperandType::BigDecimal :
-                    v = std::stold(value);
+                    return std::stold(value);
             }
         }
         catch (std::invalid_argument e)

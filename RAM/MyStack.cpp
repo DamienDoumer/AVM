@@ -48,7 +48,7 @@ BoxOperand *MyStack::pop()
         throw AVMException("The stack is empty, pop operation cannot be performed");
     BoxOperand val = (*this)._stack.top();
     _stack.pop();
-    return &val;
+    return new BoxOperand(val);
 }
 
 /*
@@ -114,6 +114,9 @@ bool MyStack::assert(BoxOperand operand)
     throw AVMWarnException("Assertion failed.");
 }
 
+/*
+ * print Int8 operand
+ */
 void MyStack::print()
 {
     if(_stack.empty())

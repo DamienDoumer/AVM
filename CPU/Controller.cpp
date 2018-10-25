@@ -169,8 +169,17 @@ void Controller::performInstructions(string command)
     }
 }
 
-void Controller::add() {
-
+void Controller::add()
+{
+    BoxOperand *poped = MyStack::getInstance()->pop();
+    BoxOperand *poped2 = MyStack::getInstance()->pop();
+    std::unique_ptr<IOperand> result = poped2->operator+(*poped);
+    string s = result.get()->toString();
+    //BoxOperand *res = dynamic_cast<BoxOperand *>(result);
+    string v = dynamic_cast<BoxOperand *>(result.get())->toString();
+    //BoxOperand *newOp = new BoxOperand(result.get()->toString(), result.get()->getType());
+//    MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(newOp));
+//    cout << " Finished subtracting values, result yields: " << newOp->toString();
 }
 
 void Controller::swap()
@@ -179,19 +188,22 @@ void Controller::swap()
     cout << "Swap completed\n";
 }
 
-void Controller::sub() {
+void Controller::sub()
+{
+}
+
+void Controller::mul()
+{
 
 }
 
-void Controller::mul() {
+void Controller::div()
+{
 
 }
 
-void Controller::div() {
-
-}
-
-void Controller::mod() {
+void Controller::mod()
+{
 
 }
 
@@ -216,12 +228,14 @@ void Controller::print()
 void Controller::pop()
 {
     BoxOperand *poped = MyStack::getInstance()->pop();
+    string enums[] = {"Int8", "Int16", "Int32", "Float", "Double", "BigDecimal"};
     cout << poped->toString() << " Was poped" << " with type: " <<
-    std::to_string(poped->getType()) << "\n";
+    enums[poped->getType()] << "\n";
 }
 
-void Controller::exit() {
- throw AVMWarnException("Exiting simulator");
+void Controller::exit()
+{
+    throw AVMWarnException("Exiting simulator");
 }
 
 void Controller::dump()

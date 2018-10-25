@@ -19,6 +19,7 @@ class Controller
     typedef void (Controller::*simpleCommandPerformer)();
     typedef std::map<std::string, commandPerformer> commandActionMap;
     typedef std::map<std::string, simpleCommandPerformer> simpleCommandActionMap;
+
 public:
     int listenToCommands();
     std::unique_ptr<BoxOperand> makeOperand(string type, string value, eOperandType &t);
