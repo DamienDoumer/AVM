@@ -312,33 +312,6 @@ CPU/TypedOperand.cpp.s:
 	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/CPU/TypedOperand.cpp.s
 .PHONY : CPU/TypedOperand.cpp.s
 
-CPU/ValueConverter.o: CPU/ValueConverter.cpp.o
-
-.PHONY : CPU/ValueConverter.o
-
-# target to build an object file
-CPU/ValueConverter.cpp.o:
-	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.o
-.PHONY : CPU/ValueConverter.cpp.o
-
-CPU/ValueConverter.i: CPU/ValueConverter.cpp.i
-
-.PHONY : CPU/ValueConverter.i
-
-# target to preprocess a source file
-CPU/ValueConverter.cpp.i:
-	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.i
-.PHONY : CPU/ValueConverter.cpp.i
-
-CPU/ValueConverter.s: CPU/ValueConverter.cpp.s
-
-.PHONY : CPU/ValueConverter.s
-
-# target to generate assembly for a file
-CPU/ValueConverter.cpp.s:
-	$(MAKE) -f CMakeFiles/SourceCode.dir/build.make CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.s
-.PHONY : CPU/ValueConverter.cpp.s
-
 IO/Parser.o: IO/Parser.cpp.o
 
 .PHONY : IO/Parser.o
@@ -558,9 +531,6 @@ help:
 	@echo "... CPU/TypedOperand.o"
 	@echo "... CPU/TypedOperand.i"
 	@echo "... CPU/TypedOperand.s"
-	@echo "... CPU/ValueConverter.o"
-	@echo "... CPU/ValueConverter.i"
-	@echo "... CPU/ValueConverter.s"
 	@echo "... IO/Parser.o"
 	@echo "... IO/Parser.i"
 	@echo "... IO/Parser.s"

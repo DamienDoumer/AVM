@@ -26,23 +26,29 @@ int Controller::listenToCommands()
     int returnVal = 0;
     std::tuple<string, string, string> parsedCommand;
 
-    try
+    while (true)
     {
-        while (true)
+        try
         {
             cout << "Please enter a command for the VM to exexute.\n";
             getline(cin, command);
             parsedCommand = parser.parseCommand(command);
-            performInstructions(std::get<0>(parsedCommand));
+            returnVal = performInstructions(std::get<0>(parsedCommand));
+            if(returnVal == -1)
+            {
+                cout << "Program exited\n";
+                return 0;
+            }
             performInstructions(std::get<0>(parsedCommand), std::get<1>(parsedCommand), std::get<2>(parsedCommand));
+            performInstructions(std::get<0>(parsedCommand), std::get<2>(parsedCommand));
         }
-    }
-    catch (exception& e)
-    {
-        cout << "An error occured while processing" <<
-             "your command. Program will exit. :: " <<
-             e.what() << "\n";
-        returnVal = -1;
+        catch (exception &e)
+        {
+            cout << "An error occured while processing" <<
+                 "your command. Program will exit. :: " <<
+                 e.what() << "\n";
+            returnVal = -1;
+        }
     }
     return returnVal;
 }
@@ -100,7 +106,7 @@ std::unique_ptr<BoxOperand> Controller::makeOperand(string type, string value, e
 /*
  * Execute parameterized commands using Command to Delegate Match
  */
-void Controller::performInstructions(string command, string operandType, string value)
+int Controller::performInstructions(string command, string operandType, string value)
 {
     std::smatch cmdMatch;
     std::map<std::string, commandPerformer>::iterator iterator;
@@ -138,11 +144,12 @@ void Controller::push(string type, string value)
     cout << "Operand added to stack successfully\n";
 }
 
-void Controller::performInstructions(string command)
+int Controller::performInstructions(string command)
 {
     std::smatch cmdMatch;
     std::map<std::string, simpleCommandPerformer>::iterator iterator;
     simpleCommandActionMap actionMap;
+    string exit = "Exit";
 
     actionMap["Add"] = &Controller::add;
     actionMap["Swap"] = &Controller::swap;
@@ -150,8 +157,6 @@ void Controller::performInstructions(string command)
     actionMap["Mul"] = &Controller::mul;
     actionMap["Div"] = &Controller::div;
     actionMap["Mod"] = &Controller::mod;
-    actionMap["Load"] = &Controller::load;
-    actionMap["Store"] = &Controller::store;
     actionMap["Print"] = &Controller::print;
     actionMap["Exit"] = &Controller::exit;
     actionMap["Pop"] = &Controller::pop;
@@ -161,10 +166,38 @@ void Controller::performInstructions(string command)
     for(iterator = actionMap.begin(); iterator != actionMap.end(); iterator++)
     {
         std::regex caseInsensitiveRegex(iterator->first, ECMAScript | icase );
+
+        if(std::regex_search(exit, cmdMatch, caseInsensitiveRegex))
+            return -1;
         if(std::regex_search(command, cmdMatch, caseInsensitiveRegex))
         {
             Controller c;
             (this->*(iterator->second))();
+            return 0;
+        }
+    }
+}
+
+/*
+ * Perform string commands and instructions,
+ * which require an index.
+ */
+int Controller::performInstructions(string command, string index)
+{
+    int i = std::stoi(index);
+
+    std::smatch cmdMatch;
+    std::map<std::string, indexedCommandPerformer>::iterator iterator;
+    indexedCommandMap actionMap;
+    actionMap["Load"] = &Controller::load;
+    actionMap["Store"] = &Controller::store;
+    for(iterator = actionMap.begin(); iterator != actionMap.end(); iterator++)
+    {
+        std::regex caseInsensitiveRegex(iterator->first, ECMAScript | icase );
+        if(std::regex_search(command, cmdMatch, caseInsensitiveRegex))
+        {
+            Controller c;
+            (this->*(iterator->second))(i);
         }
     }
 }
@@ -235,17 +268,26 @@ void Controller::mod()
     cout << " Finished Modulus, result yields: " << s << "\n";
 }
 
-void Controller::load()
+void Controller::load(int index)
 {
-    BoxOperand *bo;
-    *bo = MyRegister::getInstance()->getopRegister();
-    MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(bo));
+    BoxOperand *regOp;
+    *regOp = MyRegister::getInstance()->getIVal(index);
+    if(regOp)
+    {
+        MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(regOp));
+    }
+    else
+    {
+        throw AVMException("This register's index is empty, or NULL");
+    }
+    cout << "Load operation completed.";
 }
 
-void Controller::store()
+void Controller::store(int index)
 {
     BoxOperand *bo = MyStack::getInstance()->pop();
-    MyRegister::getInstance()->save(*bo);
+    MyRegister::getInstance()->saveIVal(*bo, index);
+    cout << "Store operation completed.";
 }
 
 void Controller::print()
@@ -263,7 +305,6 @@ void Controller::pop()
 
 void Controller::exit()
 {
-    throw AVMWarnException("Exiting simulator");
 }
 
 void Controller::dump()

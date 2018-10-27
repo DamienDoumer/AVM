@@ -11,43 +11,14 @@
 #include "TypedOperand.h"
 #include "IOperand.h"
 #include "../../AVMException.cpp"
-#include "../ValueConverter.cpp"
 #include "Converter.h"
 #include "BoxOperand.h"
 
 template<class T>
-class Factory {
+class Factory
+{
 
 public:
-    template <typename P>
-    static void convertValue(eOperandType type, const std::string &value, T &v)
-    {
-        try {
-            switch (type) {
-                case eOperandType::Int8:
-                case eOperandType::Int16:
-                case eOperandType::Int32:
-                    v = std::stoi(value);
-                case eOperandType::Float :
-                    v = std::stof(value);
-                case eOperandType::Double :
-                    v = std::stod(value);
-                case eOperandType::BigDecimal :
-                    v = std::stold(value);
-            }
-        }
-        catch (std::invalid_argument e) {
-            throw AVMException("The value passed as number is not valid");
-        }
-        catch (std::out_of_range e) {
-            char *msg = "The value passed is out of the range of the typed passed";
-            throw AVMException(msg);
-        }
-        catch (exception& e)
-        {
-            throw AVMException("An unexpected error occured when converting value types");
-        }
-    }
 
     static std::unique_ptr<TypedOperand<int>> createInt8(const string &value)
     {

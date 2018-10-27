@@ -18,12 +18,6 @@ math.h
 Headers/includer.h
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
 
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/BoxOperand.cpp
-Headers/BoxOperand.h
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/BoxOperand.h
-Headers/Converter.h
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/Converter.h
-
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Controller.cpp
 Headers/Controller.h
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/Controller.h
@@ -87,8 +81,6 @@ IOperand.h
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/IOperand.h
 ../../AVMException.cpp
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMException.cpp
-../ValueConverter.cpp
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/ValueConverter.cpp
 Converter.h
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/Converter.h
 BoxOperand.h
@@ -105,12 +97,6 @@ BoxOperand.h
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
 IOperand.h
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/IOperand.h
-
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/ValueConverter.cpp
-../AVMException.cpp
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMException.cpp
-../eOperandType.cpp
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/eOperandType.cpp
 
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
 iostream

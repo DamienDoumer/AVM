@@ -24,6 +24,17 @@ void MyRegister::save(BoxOperand op)
     this->opRegister = op;
 }
 
-BoxOperand MyRegister::getopRegister() {
+BoxOperand MyRegister::getopRegister()
+{
     return opRegister;
+}
+
+BoxOperand MyRegister::getIVal(int index)
+{
+    return arrOpRegister[index];
+}
+
+void MyRegister::saveIVal(BoxOperand val, int index)
+{
+    arrOpRegister[index] = val;
 }

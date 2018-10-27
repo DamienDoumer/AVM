@@ -26,7 +26,35 @@ std::tuple<string, string, string> Parser::parseCommand(string command)
     {
         typeValTuple = findMatchingTypeAndValue(command);
     }
+    else if (commandExtracted == "Load" || commandExtracted == "Store")
+    {
+        typeValTuple = std::make_tuple(commandExtracted, std::to_string(getRegisterIndex(command)));
+    }
     return std::make_tuple(commandExtracted, std::get<0>(typeValTuple), std::get<1>(typeValTuple));
+}
+
+int Parser::getRegisterIndex(string command)
+{
+    int index = command.find_first_of(' ');
+    string buffer;
+    int val = 0;
+
+    for(int i = index; i < command.length(); i++)
+    {
+        buffer += command[i];
+    }
+    try
+    {
+        val = std::stoi(buffer);
+        if(val > 15 || val < 0)
+            throw AVMException("You have input a wrong index for the register."
+                               " Please try with an index between 0 and 15");
+    }
+    catch (exception& e)
+    {
+        throw AVMException("The index you passed is not valid, for this action.,");
+    }
+    return val;
 }
 
 /*

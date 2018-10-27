@@ -14,11 +14,15 @@ private:
     static MyRegister* instance;
     MyRegister();
     BoxOperand opRegister;
+    BoxOperand arrOpRegister[16];
+    int index;
 
 public:
     static MyRegister* getInstance();
     void save(BoxOperand op);
     BoxOperand getopRegister();
+    BoxOperand getIVal(int index);
+    void saveIVal(BoxOperand val, int index);
 };
 
 

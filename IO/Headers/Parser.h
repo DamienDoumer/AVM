@@ -15,11 +15,11 @@ class Parser {
     string findMatchingCommand(string command);
     std::tuple<string, string> findMatchingTypeAndValue(string command);
     string extractContentFromBrackets(string command);
+    int getRegisterIndex(string command);
 public:
     std::tuple<string, string, string> parseCommand(string command);
     std::list<std::tuple<string, string, string>> parseFromFile(string path);
     bool commandHasValidArgCount(string command);
 };
-
 
 #endif //SOURCECODE_PARSER_H

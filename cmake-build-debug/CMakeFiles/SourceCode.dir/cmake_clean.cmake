@@ -11,7 +11,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/SourceCode.dir/IO/Periferal.cpp.o"
   "CMakeFiles/SourceCode.dir/AVMException.cpp.o"
   "CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o"
-  "CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.o"
   "CMakeFiles/SourceCode.dir/CPU/Converter.cpp.o"
   "CMakeFiles/SourceCode.dir/AVMWarnException.cpp.o"
   "SourceCode.pdb"

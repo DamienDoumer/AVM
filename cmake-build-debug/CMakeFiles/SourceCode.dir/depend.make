@@ -25,7 +25,6 @@ CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/Headers/Converter.h
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/Headers/Factory.h
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/Headers/IOperand.h
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/Headers/TypedOperand.h
-CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/ValueConverter.cpp
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../Headers/includer.h
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../IO/Headers/Parser.h
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../RAM/Headers/MyRegister.h
@@ -49,11 +48,6 @@ CMakeFiles/SourceCode.dir/CPU/TypedOperand.cpp.o: ../CPU/Headers/TypedOperand.h
 CMakeFiles/SourceCode.dir/CPU/TypedOperand.cpp.o: ../CPU/TypedOperand.cpp
 CMakeFiles/SourceCode.dir/CPU/TypedOperand.cpp.o: ../Headers/includer.h
 CMakeFiles/SourceCode.dir/CPU/TypedOperand.cpp.o: ../eOperandType.cpp
-
-CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.o: ../AVMException.cpp
-CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.o: ../CPU/ValueConverter.cpp
-CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.o: ../Headers/includer.h
-CMakeFiles/SourceCode.dir/CPU/ValueConverter.cpp.o: ../eOperandType.cpp
 
 CMakeFiles/SourceCode.dir/IO/Parser.cpp.o: ../AVMException.cpp
 CMakeFiles/SourceCode.dir/IO/Parser.cpp.o: ../Headers/includer.h
