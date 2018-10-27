@@ -35,6 +35,8 @@ regex
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMWarnException.cpp
 ../RAM/Headers/MyRegister.h
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/RAM/Headers/MyRegister.h
+fstream
+-
 
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/BoxOperand.h
 sstream
@@ -129,4 +131,10 @@ stack
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/BoxOperand.h
 
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/eOperandType.cpp
+
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/main.cpp
+Headers/includer.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
+CPU/Headers/Controller.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/Controller.h
 

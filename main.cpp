@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 
     if(argc == 2)
     {
-
+        controller.listenToCommands(argv[1]);
     }
     else if(argc > 2)
     {
@@ -18,5 +18,5 @@ int main(int argc, char *argv[])
     {
         returnValue = controller.listenToCommands();
     }
-    return 0;
+    return returnValue;
 }

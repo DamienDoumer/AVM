@@ -213,8 +213,8 @@ int Controller::performInstructions(string command)
     for(iterator = actionMap.begin(); iterator != actionMap.end(); iterator++)
     {
         std::regex caseInsensitiveRegex(iterator->first, ECMAScript | icase );
-
-        if(std::regex_search(exit, cmdMatch, caseInsensitiveRegex))
+        std::regex exitInsensitiveRegex(iterator->first, ECMAScript | icase );
+        if(std::regex_search(command, cmdMatch, exitInsensitiveRegex))
             return -1;
         if(std::regex_search(command, cmdMatch, caseInsensitiveRegex))
         {
