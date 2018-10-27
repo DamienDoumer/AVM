@@ -25,6 +25,7 @@ class Controller
 
 public:
     int listenToCommands();
+    int listenToCommands(string filePath);
     std::unique_ptr<BoxOperand> makeOperand(string type, string value, eOperandType &t);
     int performInstructions(string command);
     int performInstructions(string command, string index);

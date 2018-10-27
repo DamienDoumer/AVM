@@ -10,11 +10,58 @@
 #include <regex>
 #include "../AVMWarnException.cpp"
 #include "../RAM/Headers/MyRegister.h"
+#include <fstream>
 
 using namespace std::regex_constants;
 
 Controller::Controller()
 {}
+
+/*
+ * Listen to commands from a file, and
+ * return a non 0 digit when error occures.
+ */
+int Controller::listenToCommands(string filePath)
+{
+    string line;
+    std::ifstream myfile (filePath);
+    int returnVal = 0;
+    std::tuple<string, string, string> parsedCommand;
+
+
+    if (myfile.is_open())
+    {
+        while ( myfile.good() )
+        {
+            getline(myfile, line);
+            try
+            {
+                parsedCommand = parser.parseCommand(line);
+                returnVal = performInstructions(std::get<0>(parsedCommand));
+                if(returnVal == -1)
+                {
+                    cout << "Program exited\n";
+                    myfile.close();
+                    return 0;
+                }
+                performInstructions(std::get<0>(parsedCommand), std::get<1>(parsedCommand),
+                        std::get<2>(parsedCommand));
+                performInstructions(std::get<0>(parsedCommand), std::get<2>(parsedCommand));
+            }
+            catch (exception &e)
+            {
+                cout << "An error occured while processing" <<
+                     " your command. Program will exit. :: " <<
+                     e.what() << "\n";
+                returnVal = -1;
+            }
+        }
+        myfile.close();
+        cout << "You have not precised an exit point for this settings file, program will exit!.";
+    }
+    else
+        cout << "Unable to read from this file,";
+}
 
 /*
  * Listen to user's command
@@ -45,7 +92,7 @@ int Controller::listenToCommands()
         catch (exception &e)
         {
             cout << "An error occured while processing" <<
-                 "your command. Program will exit. :: " <<
+                 " your command. Program will exit. :: " <<
                  e.what() << "\n";
             returnVal = -1;
         }
