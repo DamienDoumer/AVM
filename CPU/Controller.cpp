@@ -175,11 +175,10 @@ void Controller::add()
     BoxOperand *poped2 = MyStack::getInstance()->pop();
     std::unique_ptr<IOperand> result = poped2->operator+(*poped);
     string s = result.get()->toString();
-    //BoxOperand *res = dynamic_cast<BoxOperand *>(result);
-    string v = dynamic_cast<BoxOperand *>(result.get())->toString();
-    //BoxOperand *newOp = new BoxOperand(result.get()->toString(), result.get()->getType());
-//    MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(newOp));
-//    cout << " Finished subtracting values, result yields: " << newOp->toString();
+    eOperandType t = result.get()->getType();
+    BoxOperand *myOp = new BoxOperand(s, t);
+    MyStack::getInstance()->push(std::unique_ptr<BoxOperand>(myOp));
+    cout << " Finished subtracting values, result yields: " << s << "\n";
 }
 
 void Controller::swap()
@@ -190,6 +189,9 @@ void Controller::swap()
 
 void Controller::sub()
 {
+    int *v = 0;
+    Converter::convertValue<int>(eOperandType::Int8, "20", IntOperandType::_Int8, *v);
+    int i = *v;
 }
 
 void Controller::mul()

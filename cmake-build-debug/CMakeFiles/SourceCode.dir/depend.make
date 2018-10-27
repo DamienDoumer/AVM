@@ -8,8 +8,10 @@ CMakeFiles/SourceCode.dir/AVMWarnException.cpp.o: ../AVMWarnException.cpp
 CMakeFiles/SourceCode.dir/AVMWarnException.cpp.o: ../Headers/includer.h
 
 CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o: ../AVMException.cpp
+CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o: ../AVMWarnException.cpp
 CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o: ../CPU/BoxOperand.cpp
 CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o: ../CPU/Headers/BoxOperand.h
+CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o: ../CPU/Headers/Converter.h
 CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o: ../CPU/Headers/IOperand.h
 CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o: ../Headers/includer.h
 CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o: ../eOperandType.cpp
@@ -31,6 +33,7 @@ CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../RAM/Headers/MyStack.h
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../eOperandType.cpp
 
 CMakeFiles/SourceCode.dir/CPU/Converter.cpp.o: ../AVMException.cpp
+CMakeFiles/SourceCode.dir/CPU/Converter.cpp.o: ../AVMWarnException.cpp
 CMakeFiles/SourceCode.dir/CPU/Converter.cpp.o: ../CPU/Converter.cpp
 CMakeFiles/SourceCode.dir/CPU/Converter.cpp.o: ../CPU/Headers/Converter.h
 CMakeFiles/SourceCode.dir/CPU/Converter.cpp.o: ../Headers/includer.h
@@ -84,8 +87,10 @@ CMakeFiles/SourceCode.dir/includer.cpp.o: ../Headers/includer.h
 CMakeFiles/SourceCode.dir/includer.cpp.o: ../includer.cpp
 
 CMakeFiles/SourceCode.dir/main.cpp.o: ../AVMException.cpp
+CMakeFiles/SourceCode.dir/main.cpp.o: ../AVMWarnException.cpp
 CMakeFiles/SourceCode.dir/main.cpp.o: ../CPU/Headers/BoxOperand.h
 CMakeFiles/SourceCode.dir/main.cpp.o: ../CPU/Headers/Controller.h
+CMakeFiles/SourceCode.dir/main.cpp.o: ../CPU/Headers/Converter.h
 CMakeFiles/SourceCode.dir/main.cpp.o: ../CPU/Headers/IOperand.h
 CMakeFiles/SourceCode.dir/main.cpp.o: ../Headers/includer.h
 CMakeFiles/SourceCode.dir/main.cpp.o: ../IO/Headers/Parser.h

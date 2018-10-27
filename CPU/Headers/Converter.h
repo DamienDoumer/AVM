@@ -11,8 +11,42 @@
 
 class Converter
 {
+
+public:
+
+    template<typename T1>
+    struct single
+    {
+        typedef T1 result_type;
+        T1 value;
+
+        single(const T1& value)
+                : value(value) {}
+    };
+    template<typename T1>
+    static single<T1> conv(eOperandType type, const T1& value)
+    {
+        if(type == eOperandType::Int32 || type == eOperandType::Int8
+           || type == eOperandType::Int16)
+        {
+            return single<T1>(std::to_string(std::stoi(value)));
+        }
+        else if(type == eOperandType::Float)
+        {
+            return single<T1>(std::to_string(std::stof(value)));
+        }
+        else if (type == eOperandType::Double)
+        {
+            return single<T1>(std::to_string(std::stod(value)));
+        }
+        else if (type == eOperandType::BigDecimal)
+        {
+            return single<T1>(std::to_string(std::stold(value)));
+        }
+    }
+
     template <typename T>
-    static T convertValue(eOperandType type, const std::string &value, IntOperandType typeDeterminer)
+    static void convertValue(eOperandType type, const std::string &value, IntOperandType typeDeterminer, T &container)
     {
         int val = 0;
 
@@ -32,7 +66,7 @@ class Converter
                         throw AVMWarnException("Overflow for type Int32");
             }
 
-            return std::stoi(value);
+            container = std::stoi(value);
         }
         catch (std::invalid_argument e)
         {
@@ -48,12 +82,13 @@ class Converter
             throw AVMException("An unexpected error occured when converting value types");
         }
     }
+
     template <typename T>
-    static T convertValue(eOperandType type, const std::string &value, FloatOperandType typeDeterminer)
+    static void convertValue(eOperandType type, const std::string &value, FloatOperandType typeDeterminer, T &container)
     {
         try
         {
-            return std::stof(value);
+            container = std::stof(value);
         }
         catch (std::invalid_argument e)
         {
@@ -69,12 +104,13 @@ class Converter
             throw AVMException("An unexpected error occured when converting value types");
         }
     }
+
     template <typename T>
-    static T convertValue(eOperandType type, const std::string &value, DoubleOperandType typeDeterminer)
+    static void convertValue(eOperandType type, const std::string &value, DoubleOperandType typeDeterminer,  T &container)
     {
         try
         {
-            return std::stof(value);
+            container = std::stof(value);
         }
         catch (std::invalid_argument e)
         {
@@ -90,12 +126,14 @@ class Converter
             throw AVMException("An unexpected error occured when converting value types");
         }
     }
+
     template <typename T>
-    static T convertValue(eOperandType type, const std::string &value, BigDecimalOperandType typeDeterminer)
+    static void convertValue(eOperandType type, const std::string &value, BigDecimalOperandType typeDeterminer,  T &container)
     {
         try
         {
-            return  std::stold(value);
+            auto v = std::stold(value);
+            container =  v;
         }
         catch (std::invalid_argument e)
         {

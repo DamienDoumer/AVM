@@ -10,6 +10,7 @@
 #include "../../Headers/includer.h"
 #include "../../eOperandType.cpp"
 #include "BoxOperand.h"
+#include "Converter.h"
 
 class Controller
 {
@@ -19,6 +20,11 @@ class Controller
     typedef void (Controller::*simpleCommandPerformer)();
     typedef std::map<std::string, commandPerformer> commandActionMap;
     typedef std::map<std::string, simpleCommandPerformer> simpleCommandActionMap;
+    void a()
+    {
+        int *v = 0;
+        Converter::convertValue<int>(eOperandType::Int8, "20", IntOperandType::_Int8, *v);
+    }
 
 public:
     int listenToCommands();
