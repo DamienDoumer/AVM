@@ -99,6 +99,9 @@
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Converter.cpp">
 			<Option target="SourceCode"/>
 		</Unit>
+		<Unit filename="/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/BFactory.h">
+			<Option target="SourceCode"/>
+		</Unit>
 		<Unit filename="/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/BoxOperand.h">
 			<Option target="SourceCode"/>
 		</Unit>

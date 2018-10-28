@@ -12,8 +12,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b01e2194-e8d8-435f-a7eb-f3f09232f4ed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/CPU/Controller.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPU/Controller.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPU/Headers/BFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SourceCode.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SourceCode.cbp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,23 +95,24 @@
     <session id="-1124658826">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.25" value="2" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="SourceCode (disassembly)" value="15" />
-          <entry key="cpp" value="74" />
-          <entry key="h" value="75" />
+          <entry key="cpp" value="79" />
+          <entry key="h" value="81" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
@@ -117,18 +120,18 @@
         <counts>
           <entry key="CMakeLists.txt" value="1" />
           <entry key="Disassembly" value="15" />
-          <entry key="ObjectiveC" value="149" />
+          <entry key="ObjectiveC" value="160" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="9948" />
-          <entry key="h" value="4088" />
+          <entry key="cpp" value="9956" />
+          <entry key="h" value="4384" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="14036" />
+          <entry key="ObjectiveC" value="14340" />
         </counts>
       </usages-collector>
     </session>
@@ -136,48 +139,59 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
+        <entry file="file://$PROJECT_DIR$/CPU/IOperand.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CPU/Headers/Converter.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-353">
+              <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
               <folding>
-                <element signature="e#0#29#0" expanded="true" />
+                <marker date="1540649832264" expanded="true" signature="1342:1892" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CPU/Headers/Controller.h">
+        <entry file="file://$PROJECT_DIR$/CPU/Headers/Factory.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+            <state relative-caret-position="277">
+              <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
               <folding>
-                <element signature="e#107#121#0" expanded="true" />
+                <element signature="e#101#118#0" expanded="true" />
+                <element signature="e#327#336#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CPU/Controller.cpp">
+        <entry file="file://$PROJECT_DIR$/CPU/Headers/BFactory.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="214" column="75" selection-start-line="214" selection-start-column="70" selection-end-line="214" selection-end-column="75" />
+            <state relative-caret-position="1395">
+              <caret line="93" column="46" lean-forward="true" selection-start-line="93" selection-start-column="46" selection-end-line="93" selection-end-column="46" />
               <folding>
-                <element signature="e#42#73#0" expanded="true" />
+                <element signature="e#101#118#0" expanded="true" />
+                <element signature="e#460#469#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IO/Parser.cpp">
+        <entry file="file://$PROJECT_DIR$/CPU/BoxOperand.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="5" selection-end-column="30" />
               <folding>
-                <element signature="e#42#69#0" expanded="true" />
+                <element signature="e#41#72#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -227,6 +241,7 @@
         <option value="$PROJECT_DIR$/CPU/Headers/Controller.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/CPU/Controller.cpp" />
+        <option value="$PROJECT_DIR$/CPU/Headers/BFactory.h" />
       </list>
     </option>
   </component>
@@ -237,7 +252,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="982" />
     <option name="y" value="25" />
     <option name="width" value="938" />
@@ -267,33 +282,6 @@
               <item name="SourceCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="SourceCode" type="462c0819:PsiDirectoryNode" />
               <item name="CPU" type="462c0819:PsiDirectoryNode" />
-              <item name="Headers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SourceCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SourceCode" type="462c0819:PsiDirectoryNode" />
-              <item name="Headers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SourceCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SourceCode" type="462c0819:PsiDirectoryNode" />
-              <item name="IO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SourceCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SourceCode" type="462c0819:PsiDirectoryNode" />
-              <item name="IO" type="462c0819:PsiDirectoryNode" />
-              <item name="Headers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SourceCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SourceCode" type="462c0819:PsiDirectoryNode" />
-              <item name="RAM" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SourceCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SourceCode" type="462c0819:PsiDirectoryNode" />
-              <item name="RAM" type="462c0819:PsiDirectoryNode" />
               <item name="Headers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -373,12 +361,13 @@
       <workItem from="1540450810872" duration="10540000" />
       <workItem from="1540485553650" duration="3318000" />
       <workItem from="1540544490178" duration="10209000" />
-      <workItem from="1540630232420" duration="32271000" />
+      <workItem from="1540630232420" duration="33560000" />
+      <workItem from="1540750452573" duration="1465000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185926000" />
+    <option name="totallyTimeSpent" value="188680000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -390,10 +379,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="45" y="25" width="1875" height="1055" extended-state="6" />
+    <frame x="45" y="25" width="1875" height="1055" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25478405" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25751776" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -444,32 +433,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/CPU/Controller.cpp</url>
-          <line>327</line>
-          <option name="timeStamp" value="138" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/CPU/Controller.cpp</url>
-          <line>323</line>
-          <option name="timeStamp" value="139" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/CPU/Controller.cpp</url>
-          <line>319</line>
-          <option name="timeStamp" value="140" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/CPU/Controller.cpp</url>
-          <line>334</line>
-          <option name="timeStamp" value="141" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Headers/Includers.h" />
@@ -530,22 +493,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RAM/MyStack.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#42#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/RAM/Headers/MyStack.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#101#122#0" expanded="true" />
-            <element signature="e#158#197#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -553,13 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="57" lean-forward="true" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CPU/TypedOperand.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -577,13 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CPU/IOperand.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/c++/7/bits/unique_ptr.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
@@ -591,52 +530,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CPU/ValueConverter.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-          <folding>
-            <element signature="e#41#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CPU/Headers/Converter.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
-          <folding>
-            <element signature="e#875#888#0" expanded="true" />
-            <element signature="e#1050#1063#0" expanded="true" />
-            <marker date="1540649832264" expanded="true" signature="1342:1892" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CPU/BoxOperand.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="109" column="64" lean-forward="true" selection-start-line="109" selection-start-column="64" selection-end-line="109" selection-end-column="64" />
-          <folding>
-            <element signature="e#41#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CPU/Converter.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CPU/Headers/Factory.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#101#118#0" expanded="true" />
-            <element signature="e#327#336#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/CPU/ValueConverter.cpp" />
     <entry file="file://$PROJECT_DIR$/IO/Headers/Parser.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -669,8 +563,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
           <folding>
-            <element signature="e#103#138#0" expanded="true" />
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IO/Parser.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+          <folding>
+            <element signature="e#42#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPU/TypedOperand.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPU/Headers/Controller.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <folding>
+            <element signature="e#107#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPU/Converter.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPU/IOperand.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPU/Controller.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2307">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding>
+            <element signature="e#42#73#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -685,42 +633,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CPU/Headers/Controller.h">
+    <entry file="file://$PROJECT_DIR$/CPU/Headers/Factory.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+        <state relative-caret-position="277">
+          <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
           <folding>
-            <element signature="e#107#121#0" expanded="true" />
+            <element signature="e#101#118#0" expanded="true" />
+            <element signature="e#327#336#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/CPU/Headers/Converter.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        <state relative-caret-position="-353">
+          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <marker date="1540649832264" expanded="true" signature="1342:1892" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IO/Parser.cpp">
+    <entry file="file://$PROJECT_DIR$/CPU/BoxOperand.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="5" selection-end-column="30" />
           <folding>
-            <element signature="e#42#69#0" expanded="true" />
+            <element signature="e#41#72#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CPU/Controller.cpp">
+    <entry file="file://$PROJECT_DIR$/CPU/Headers/BFactory.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="214" column="75" selection-start-line="214" selection-start-column="70" selection-end-line="214" selection-end-column="75" />
+        <state relative-caret-position="1395">
+          <caret line="93" column="46" lean-forward="true" selection-start-line="93" selection-start-column="46" selection-end-line="93" selection-end-column="46" />
           <folding>
-            <element signature="e#42#73#0" expanded="true" />
+            <element signature="e#101#118#0" expanded="true" />
+            <element signature="e#460#469#0" expanded="true" />
           </folding>
         </state>
       </provider>
