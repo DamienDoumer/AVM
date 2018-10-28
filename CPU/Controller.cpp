@@ -4,6 +4,7 @@
 
 #include "Headers/Controller.h"
 #include "Headers/Factory.h"
+#include "Headers/BFactory.h"
 #include "../AVMException.cpp"
 #include "../RAM/Headers/MyStack.h"
 #include <algorithm>
@@ -111,30 +112,37 @@ std::unique_ptr<BoxOperand> Controller::makeOperand(string type, string value, e
     {
         if(type == "Int8")
         {
+            //bo = BFactory<BoxOperand>::createOperand(eOperandType::Int8, value).get();
             std::unique_ptr<TypedOperand<int>> op = Factory<int>::createIntOperand(eOperandType::Int8, value);
             bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
         }
         else if(type == "Int16")
         {
+            //bo = BFactory<BoxOperand>::createOperand(eOperandType::Int16, value).get();
             std::unique_ptr<TypedOperand<int>> op = Factory<int>::createIntOperand(eOperandType::Int16, value);
             bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
         }
         else if(type == "Int32")
         {
+            //bo = BFactory<BoxOperand>::createOperand(eOperandType::Int32, value).get();
             std::unique_ptr<TypedOperand<int>> op = Factory<int>::createIntOperand(eOperandType::Int32, value);
             bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
         }
-        else if(type == "Float") {
+        else if(type == "Float")
+        {
+            //bo = BFactory<BoxOperand>::createOperand(eOperandType::Float, value).get();
             std::unique_ptr<TypedOperand<float>> op = Factory<float>::createFloat(value);
             bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
         }
         else if(type == "Double")
         {
+            //bo = BFactory<BoxOperand>::createOperand(eOperandType::Double, value).get();
             std::unique_ptr<TypedOperand<double>> op = Factory<double>::createDouble(value);
             bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
         }
         else if(type == "BigDecimal")
         {
+            //bo = BFactory<BoxOperand>::createOperand(eOperandType::BigDecimal, value).get();
             std::unique_ptr<TypedOperand<long double>> op = Factory<long double>::createBigDecimal(value);
             bo = new BoxOperand((*op.get()).toString(), (*op.get()).getType());
         }

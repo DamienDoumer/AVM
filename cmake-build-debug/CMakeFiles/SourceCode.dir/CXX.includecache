@@ -23,6 +23,8 @@ Headers/Controller.h
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/Controller.h
 Headers/Factory.h
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/Factory.h
+Headers/BFactory.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/BFactory.h
 ../AVMException.cpp
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMException.cpp
 ../RAM/Headers/MyStack.h
@@ -37,6 +39,24 @@ regex
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/RAM/Headers/MyRegister.h
 fstream
 -
+
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/BFactory.h
+memory
+-
+../../Headers/includer.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
+../../eOperandType.cpp
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/eOperandType.cpp
+TypedOperand.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/TypedOperand.h
+IOperand.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/IOperand.h
+../../AVMException.cpp
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/AVMException.cpp
+Converter.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/Converter.h
+BoxOperand.h
+/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/BoxOperand.h
 
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/BoxOperand.h
 sstream
@@ -131,10 +151,4 @@ stack
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/BoxOperand.h
 
 /home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/eOperandType.cpp
-
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/main.cpp
-Headers/includer.h
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/Headers/includer.h
-CPU/Headers/Controller.h
-/home/damien/Desktop/Epitech/Exos/AbstractVM/SourceCode/CPU/Headers/Controller.h
 

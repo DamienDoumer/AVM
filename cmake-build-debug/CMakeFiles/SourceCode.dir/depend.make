@@ -19,6 +19,7 @@ CMakeFiles/SourceCode.dir/CPU/BoxOperand.cpp.o: ../eOperandType.cpp
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../AVMException.cpp
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../AVMWarnException.cpp
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/Controller.cpp
+CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/Headers/BFactory.h
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/Headers/BoxOperand.h
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/Headers/Controller.h
 CMakeFiles/SourceCode.dir/CPU/Controller.cpp.o: ../CPU/Headers/Converter.h

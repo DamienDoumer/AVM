@@ -2,7 +2,6 @@
 // Created by dtohi on 10/20/2018.
 //
 
-#ifndef SOURCECODE_FACTORY_H
 #define SOURCECODE_FACTORY_H
 
 #include <memory>
@@ -15,7 +14,7 @@
 #include "BoxOperand.h"
 
 template<class T>
-class Factory
+class BFactory
 {
 
     static std::unique_ptr<BoxOperand> createInt8(const string &value)
@@ -24,7 +23,7 @@ class Factory
 
         Converter::convertValue<int>(eOperandType::Int8, value, IntOperandType::_Int8, v);
         BoxOperand *op;
-        op = new BoxOperand(eOperandType::Int8, std::to_string(v);
+        op = new BoxOperand(std::to_string(v), eOperandType::Int8);
         return std::unique_ptr<BoxOperand>(op);
     }
 
@@ -33,8 +32,7 @@ class Factory
         int v = 0;
 
         Converter::convertValue<int>(eOperandType::Int16, value, IntOperandType::_Int16, v);
-        BoxOperand *op;
-        op = new BoxOperand(eOperandType::Int16, std::to_string(v);
+        BoxOperand *op = new BoxOperand(std::to_string(v), eOperandType::Int16);
         return std::unique_ptr<BoxOperand>(op);
     }
 
@@ -43,8 +41,7 @@ class Factory
         int v = 0;
 
         Converter::convertValue<int>(eOperandType::Int32, value, IntOperandType::_Int32, v);
-        BoxOperand *op;
-        op = new BoxOperand(eOperandType::Int32, std::to_string(v);
+        BoxOperand *op  = new BoxOperand(std::to_string(v), eOperandType::Int32);
         return std::unique_ptr<BoxOperand>(op);
     }
 
@@ -54,7 +51,7 @@ class Factory
 
         Converter::convertValue<float>(eOperandType::Float, value, FloatOperandType::_Float, v);
         BoxOperand *op;
-        op = new BoxOperand(eOperandType::Float, std::to_string(v);
+        op = new BoxOperand(std::to_string(v), eOperandType::Float);
         return std::unique_ptr<BoxOperand>(op);
     }
 
@@ -64,7 +61,7 @@ class Factory
 
         Converter::convertValue<double>(eOperandType::Double, value, DoubleOperandType::_Double, v);
         BoxOperand *op;
-        op = new BoxOperand(eOperandType::Double, std::to_string(v);
+        op = new BoxOperand(std::to_string(v), eOperandType::Double);
         return std::unique_ptr<BoxOperand>(op);
     }
 
@@ -74,7 +71,7 @@ class Factory
 
         Converter::convertValue<long double>(eOperandType::BigDecimal, value, BigDecimalOperandType::_BigDecimal, v);
         BoxOperand *op;
-        op = new BoxOperand(eOperandType::BigDecimal, std::to_string(v);
+        op = new BoxOperand(std::to_string(v), eOperandType::BigDecimal);
         return std::unique_ptr<BoxOperand>(op);
     }
 
@@ -107,5 +104,3 @@ public:
         }
     }
 };
-
-#endif //SOURCECODE_FACTORY_H
