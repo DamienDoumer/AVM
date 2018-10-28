@@ -25,43 +25,79 @@ Controller::Controller()
 int Controller::listenToCommands(string filePath)
 {
     string line;
-    std::ifstream myfile (filePath);
+    //std::ifstream myfile (filePath);
     int returnVal = 0;
     std::tuple<string, string, string> parsedCommand;
+    std::ifstream inFile;
 
-
-    if (myfile.is_open())
+    inFile.open(filePath);
+    if(!inFile.is_open())
     {
-        while ( myfile.good() )
-        {
-            getline(myfile, line);
-            try
-            {
-                parsedCommand = parser.parseCommand(line);
-                returnVal = performInstructions(std::get<0>(parsedCommand));
-                if(returnVal == -1)
-                {
-                    cout << "Program exited\n";
-                    myfile.close();
-                    return 0;
-                }
-                performInstructions(std::get<0>(parsedCommand), std::get<1>(parsedCommand),
-                        std::get<2>(parsedCommand));
-                performInstructions(std::get<0>(parsedCommand), std::get<2>(parsedCommand));
-            }
-            catch (exception &e)
-            {
-                cout << "An error occured while processing" <<
-                     " your command. Program will exit. :: " <<
-                     e.what() << "\n";
-                returnVal = -1;
-            }
-        }
-        myfile.close();
-        cout << "You have not precised an exit point for this settings file, program will exit!.";
+        cout << "Unable to read file";
+        return -1;
     }
-    else
-        cout << "Unable to read from this file,";
+    while(inFile.good())
+    {
+        try
+        {
+            getline(inFile, line);
+            parsedCommand = parser.parseCommand(line);
+            returnVal = performInstructions(std::get<0>(parsedCommand));
+            if(returnVal == -1)
+            {
+                cout << "Program exited\n";
+                inFile.close();
+                return 0;
+            }
+            performInstructions(std::get<0>(parsedCommand), std::get<1>(parsedCommand),
+                                std::get<2>(parsedCommand));
+            performInstructions(std::get<0>(parsedCommand), std::get<2>(parsedCommand));
+        }
+        catch (exception &e)
+        {
+            cout << "An error occured while processing" <<
+                 " your command. Program will exit. :: " <<
+                 e.what() << "\n";
+            returnVal = -1;
+        }
+    }
+    inFile.close();
+    cout << "You have not precised an exit point for this settings file, program will exit!.\n";
+//    {
+//
+//    }
+//    if (myfile.is_open())
+//    {
+//        while ( myfile.good() )
+//        {
+//            getline(myfile, line);
+//            try
+//            {
+//                parsedCommand = parser.parseCommand(line);
+//                returnVal = performInstructions(std::get<0>(parsedCommand));
+//                if(returnVal == -1)
+//                {
+//                    cout << "Program exited\n";
+//                    myfile.close();
+//                    return 0;
+//                }
+//                performInstructions(std::get<0>(parsedCommand), std::get<1>(parsedCommand),
+//                        std::get<2>(parsedCommand));
+//                performInstructions(std::get<0>(parsedCommand), std::get<2>(parsedCommand));
+//            }
+//            catch (exception &e)
+//            {
+//                cout << "An error occured while processing" <<
+//                     " your command. Program will exit. :: " <<
+//                     e.what() << "\n";
+//                returnVal = -1;
+//            }
+//        }
+//        myfile.close();
+//        cout << "You have not precised an exit point for this settings file, program will exit!.";
+//    }
+//    else
+//        cout << "Unable to read from this file,";
 }
 
 /*
