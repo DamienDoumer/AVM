@@ -8,11 +8,9 @@
 #include <regex>
 using namespace std::regex_constants;
 
-/*
- * Parse a command and return its interpretation
- * Returns a tuple made of the Command, The Type if reuired
- * And the value if required
- */
+/// Parse a command and return its interpretation
+/// \param command The command passed by the user
+/// \return A tuple containing the 3 command sections.
 std::tuple<string, string, string> Parser::parseCommand(string command)
 {
     string commandExtracted;
@@ -33,6 +31,9 @@ std::tuple<string, string, string> Parser::parseCommand(string command)
     return std::make_tuple(commandExtracted, std::get<0>(typeValTuple), std::get<1>(typeValTuple));
 }
 
+/// Get the index of the register.
+/// \param command User's command passed.
+/// \return The index passed.
 int Parser::getRegisterIndex(string command)
 {
     int index = command.find_first_of(' ');
@@ -57,10 +58,9 @@ int Parser::getRegisterIndex(string command)
     return val;
 }
 
-/*
- * Find the command which the user sends.
- * Case insensitive
- */
+/// Find matching command
+/// \param cmd Command passed by user
+/// \return The matching command
 string Parser::findMatchingCommand(string cmd)
 {
     string commands[] = { "Push", "Pop", "Clear", "Dup", "Swap", "Dump",

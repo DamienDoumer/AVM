@@ -16,7 +16,6 @@
 template<class T>
 class BFactory
 {
-
     static std::unique_ptr<BoxOperand> createInt8(const string &value)
     {
         int v = 0;
@@ -77,7 +76,8 @@ class BFactory
 
 public:
     static std::unique_ptr<BoxOperand> createOperand(eOperandType type,
-                                                          const std::string &value) {
+                                                          const std::string &value)
+{
         try {
 
             switch (type) {

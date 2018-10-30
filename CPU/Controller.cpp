@@ -18,10 +18,9 @@ using namespace std::regex_constants;
 Controller::Controller()
 {}
 
-/*
- * Listen to commands from a file, and
- * return a non 0 digit when error occures.
- */
+/// Listen to commands from a file, and
+/// \param filePath the path to the AVM settings file
+/// \return an integer indicating if operation was successfull
 int Controller::listenToCommands(string filePath)
 {
     string line;
@@ -63,47 +62,10 @@ int Controller::listenToCommands(string filePath)
     }
     inFile.close();
     cout << "You have not precised an exit point for this settings file, program will exit!.\n";
-//    {
-//
-//    }
-//    if (myfile.is_open())
-//    {
-//        while ( myfile.good() )
-//        {
-//            getline(myfile, line);
-//            try
-//            {
-//                parsedCommand = parser.parseCommand(line);
-//                returnVal = performInstructions(std::get<0>(parsedCommand));
-//                if(returnVal == -1)
-//                {
-//                    cout << "Program exited\n";
-//                    myfile.close();
-//                    return 0;
-//                }
-//                performInstructions(std::get<0>(parsedCommand), std::get<1>(parsedCommand),
-//                        std::get<2>(parsedCommand));
-//                performInstructions(std::get<0>(parsedCommand), std::get<2>(parsedCommand));
-//            }
-//            catch (exception &e)
-//            {
-//                cout << "An error occured while processing" <<
-//                     " your command. Program will exit. :: " <<
-//                     e.what() << "\n";
-//                returnVal = -1;
-//            }
-//        }
-//        myfile.close();
-//        cout << "You have not precised an exit point for this settings file, program will exit!.";
-//    }
-//    else
-//        cout << "Unable to read from this file,";
 }
 
-/*
- * Listen to user's command
- * Return non 0 digit if error occures.
- */
+/// Listen to user's command
+/// \return non 0 digit if error occures.
 int Controller::listenToCommands()
 {
     string command;
@@ -137,9 +99,11 @@ int Controller::listenToCommands()
     return returnVal;
 }
 
-/*
- * Use the factory to make a new operand of coresponding type
- */
+/// Use the factory to make a new operand of coresponding type
+/// \param type the operand's type
+/// \param value the numeric value of the operand
+/// \param t the final enumerated value of the operand
+/// \return a newly created box operand
 std::unique_ptr<BoxOperand> Controller::makeOperand(string type, string value, eOperandType &t)
 {
     BoxOperand *bo = NULL;
@@ -194,9 +158,13 @@ std::unique_ptr<BoxOperand> Controller::makeOperand(string type, string value, e
     return std::unique_ptr<BoxOperand>(bo);
 }
 
-/*
- * Execute parameterized commands using Command to Delegate Match
- */
+/// Interpretes commands and perform approprirate instructions by calling the
+/// Right action to be performed by the system these instructions requires
+/// passing new operands.
+/// \param command The command passed by the user.
+/// \param operandType the type of the operand to be passed
+/// \param value the numeric value of the operand
+/// \return return a non 0 value if error or exit is called
 int Controller::performInstructions(string command, string operandType, string value)
 {
     std::smatch cmdMatch;
@@ -216,6 +184,10 @@ int Controller::performInstructions(string command, string operandType, string v
     }
 }
 
+/// Asssert that the value passed as operand is
+/// Equal to the one at the top of the stack
+/// \param type The passed operand's type
+/// \param value The passed operand's value
 void Controller::assert(string type, string value)
 {
     eOperandType t = eOperandType::Double;
@@ -226,6 +198,9 @@ void Controller::assert(string type, string value)
         cout << "Assertion passed, operands are equal\n";
 }
 
+/// Perform push operations into the stack by calling the stack itself
+/// \param type The type of the operand
+/// \param value The numeric value of the operand
 void Controller::push(string type, string value)
 {
     eOperandType t = eOperandType::Double;
@@ -235,6 +210,10 @@ void Controller::push(string type, string value)
     cout << "Operand added to stack successfully\n";
 }
 
+/// Perform instructions with only one command passed to it.
+/// That is, instructions which require no additional data.
+/// \param command The user's command
+/// \return A non 0 value if error occures or if exit is required.
 int Controller::performInstructions(string command)
 {
     std::smatch cmdMatch;
@@ -257,7 +236,7 @@ int Controller::performInstructions(string command)
     for(iterator = actionMap.begin(); iterator != actionMap.end(); iterator++)
     {
         std::regex caseInsensitiveRegex(iterator->first, ECMAScript | icase );
-        std::regex exitInsensitiveRegex(iterator->first, ECMAScript | icase );
+        std::regex exitInsensitiveRegex(exit, ECMAScript | icase );
         if(std::regex_search(command, cmdMatch, exitInsensitiveRegex))
             return -1;
         if(std::regex_search(command, cmdMatch, caseInsensitiveRegex))
@@ -273,6 +252,10 @@ int Controller::performInstructions(string command)
  * Perform string commands and instructions,
  * which require an index.
  */
+/// Perform string commands and instructions, Which require an index
+/// \param command The command passed by the user
+/// \param index The Register's index
+/// \return non zero value in case of errors.
 int Controller::performInstructions(string command, string index)
 {
     int i = std::stoi(index);
@@ -293,6 +276,7 @@ int Controller::performInstructions(string command, string index)
     }
 }
 
+/// Coordinates and perform the stack's add operation.
 void Controller::add()
 {
     BoxOperand *poped = MyStack::getInstance()->pop();
@@ -305,12 +289,14 @@ void Controller::add()
     cout << "Finished adding values, result yields: " << s << "\n";
 }
 
+/// Coordinates and perform the stack's swap operation.
 void Controller::swap()
 {
     MyStack::getInstance()->swap();
     cout << "Swap completed\n";
 }
 
+/// Coordinates and perform the stack's sub operation.
 void Controller::sub()
 {
     BoxOperand *poped = MyStack::getInstance()->pop();
@@ -323,6 +309,7 @@ void Controller::sub()
     cout << " Finished subtracting values, result yields: " << s << "\n";
 }
 
+/// Coordinates and perform the stack's mul operation.
 void Controller::mul()
 {
     BoxOperand *poped = MyStack::getInstance()->pop();
@@ -335,6 +322,7 @@ void Controller::mul()
     cout << " Finished subtracting values, result yields: " << s << "\n";
 }
 
+/// Coordinates and perform the stack's div operation.
 void Controller::div()
 {
     BoxOperand *poped = MyStack::getInstance()->pop();
@@ -347,6 +335,7 @@ void Controller::div()
     cout << " Finished Dividing values, result yields: " << s << "\n";
 }
 
+/// Coordinates and perform the stack's mod operation.
 void Controller::mod()
 {
     BoxOperand *poped = MyStack::getInstance()->pop();
@@ -359,6 +348,7 @@ void Controller::mod()
     cout << " Finished Modulus, result yields: " << s << "\n";
 }
 
+/// Coordinates and perform the stack's load operation.
 void Controller::load(int index)
 {
     BoxOperand *regOp;
@@ -374,6 +364,7 @@ void Controller::load(int index)
     cout << "Load operation completed.";
 }
 
+/// Coordinates and perform the register's save operation.
 void Controller::store(int index)
 {
     BoxOperand *bo = MyStack::getInstance()->pop();
@@ -381,11 +372,13 @@ void Controller::store(int index)
     cout << "Store operation completed.";
 }
 
+/// Coordinates and perform the stack's print operation.
 void Controller::print()
 {
     MyStack::getInstance()->print();
 }
 
+/// Coordinates and perform the stack's pop operation.
 void Controller::pop()
 {
     BoxOperand *poped = MyStack::getInstance()->pop();
@@ -394,21 +387,25 @@ void Controller::pop()
     enums[poped->getType()] << "\n";
 }
 
+/// Coordinates and perform the exit operation.
 void Controller::exit()
 {
 }
 
+/// Coordinates and perform the stack's dump operation.
 void Controller::dump()
 {
     MyStack::getInstance()->dump();
 }
 
+/// Coordinates and perform the stack's dup operation.
 void Controller::dup()
 {
     MyStack::getInstance()->dup();
     cout << "Duplication Funished\n";
 }
 
+/// Coordinates and perform the stack's clear operation.
 void Controller::clear()
 {
     MyStack::getInstance()->clear();

@@ -9,11 +9,13 @@
 #include "../../AVMException.cpp"
 #include "../../eOperandType.cpp"
 
+/// Performs seamless convertions between every required type passed
 class Converter
 {
 
 public:
 
+    /// Single structure for T type return
     template<typename T1>
     struct single
     {
@@ -23,6 +25,11 @@ public:
         single(const T1& value)
                 : value(value) {}
     };
+    /// Convert any numeric value from string
+    /// \tparam T1 The type of the value required for conversion
+    /// \param type The operand's type
+    /// \param value The numeric value in its string form
+    /// \return The Value converted
     template<typename T1>
     static single<T1> conv(eOperandType type, const T1& value)
     {
@@ -45,6 +52,12 @@ public:
         }
     }
 
+    /// Convert value with referenced parameter.
+    /// \tparam T The type of the refernce parameter container
+    /// \param type The type of the operand
+    /// \param value The string version of the numeric value to be converted.
+    /// \param typeDeterminer The determiner enum overiding
+    /// \param container The refernce parameter container
     template <typename T>
     static void convertValue(eOperandType type, const std::string &value, IntOperandType typeDeterminer, T &container)
     {
@@ -83,6 +96,12 @@ public:
         }
     }
 
+    /// Convert value with referenced parameter.
+    /// \tparam T The type of the refernce parameter container
+    /// \param type The type of the operand
+    /// \param value The string version of the numeric value to be converted.
+    /// \param typeDeterminer The determiner enum overiding
+    /// \param container The refernce parameter container
     template <typename T>
     static void convertValue(eOperandType type, const std::string &value, FloatOperandType typeDeterminer, T &container)
     {
@@ -105,6 +124,12 @@ public:
         }
     }
 
+    /// Convert value with referenced parameter.
+    /// \tparam T The type of the refernce parameter container
+    /// \param type The type of the operand
+    /// \param value The string version of the numeric value to be converted.
+    /// \param typeDeterminer The determiner enum overiding
+    /// \param container The refernce parameter container
     template <typename T>
     static void convertValue(eOperandType type, const std::string &value, DoubleOperandType typeDeterminer,  T &container)
     {
@@ -127,6 +152,12 @@ public:
         }
     }
 
+    /// Convert value with referenced parameter.
+    /// \tparam T The type of the refernce parameter container
+    /// \param type The type of the operand
+    /// \param value The string version of the numeric value to be converted.
+    /// \param typeDeterminer The determiner enum overiding
+    /// \param container The refernce parameter container
     template <typename T>
     static void convertValue(eOperandType type, const std::string &value, BigDecimalOperandType typeDeterminer,  T &container)
     {
